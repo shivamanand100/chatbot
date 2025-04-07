@@ -143,7 +143,6 @@ import nltk
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('punkt_tab')  # Download the punkt_tab data package
-!pip install python-dotenv
 
 # Load environment variables
 load_dotenv()
