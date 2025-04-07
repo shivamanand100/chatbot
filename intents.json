@@ -1,0 +1,1015 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hi", "Hello", "Hey there", "Good morning", "Good evening", "What's up?", "Howdy", "Greetings"],
+			"responses": ["Hello! 👋", "Hi there! How can I assist you?", "Nice to see you!", "Hey! What can I do for you today?"]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Bye", "See you later", "Goodbye", "Take care", "I'm leaving", "Have a nice day", "Catch you later"],
+			"responses": ["Goodbye! 👋", "Until next time!", "Take care!", "Feel free to return if you have more questions!"]
+		},
+		{
+			"tag": "programming",
+			"patterns": ["What is programming?", "Explain coding", "Define software development", "What does a programmer do?", "How does coding work?"],
+			"responses": [
+				"Programming is the process of writing instructions for computers to execute tasks.",
+				"Coding involves creating algorithms and translating them into a language computers understand.",
+				"Software development includes designing, coding, testing, and maintaining programs."
+			]
+		},
+		{
+			"tag": "resource",
+			"patterns": ["Where to learn coding?", "Best coding courses", "How to start programming?", "Recommend learning platforms", "Free coding resources"],
+			"responses": [
+				"Try platforms like freeCodeCamp, Codecademy, or Coursera!",
+				"NeuralNine's YouTube channel has great Python tutorials.",
+				"The book 'Automate the Boring Stuff with Python' is a fantastic starting point."
+			]
+		},
+		{
+			"tag": "stocks",
+			"patterns": ["Show my portfolio", "What stocks do I hold?", "Stock balance", "Portfolio status", "Investment summary"],
+			"responses": ["Fetching your stock portfolio... (example: AAPL: 10 shares, TSLA: 5 shares)", "Your current holdings:"]
+		},
+		{
+			"tag": "jokes",
+			"patterns": ["Tell me a joke", "Make me laugh", "Say something funny", "Do you know any jokes?"],
+			"responses": [
+				"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+				"How many programmers does it take to change a lightbulb? None – it’s a hardware problem! 💡"
+			]
+		},
+		{
+			"tag": "time",
+			"patterns": ["What time is it?", "Current time", "Time check", "What's the time?"],
+			"responses": ["It's [TIME] in your local timezone."]
+		},
+		{
+			"tag": "weather",
+			"patterns": ["What's the weather like?", "Weather forecast", "Is it raining?", "Temperature today"],
+			"responses": ["The weather in [LOCATION] is [WEATHER_DETAILS]."]
+		},
+		{
+			"tag": "help",
+			"patterns": ["Help me", "What can you do?", "List commands", "How to use you?"],
+			"responses": [
+				"I can: Explain programming concepts, share learning resources, tell jokes, check stocks/time/weather, and more!",
+				"Try asking about coding, your portfolio, or current time/weather."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["Thank you", "Thanks!", "Appreciate it", "You're awesome"],
+			"responses": ["You're welcome! 😊", "Happy to help!", "Anytime!"]
+		},
+		{
+			"tag": "fallback",
+			"patterns": [],
+			"responses": ["I didn't quite understand that. Could you rephrase?", "Let me connect you to a human agent..."]
+		},
+		{
+			"tag": "web_development",
+			"patterns": ["How to learn web development?", "Best resources for web dev", "Where to start with HTML and CSS?", "Recommend web development courses", "Free web dev tutorials"],
+			"responses": [
+			  "Check out The Odin Project for a free, comprehensive web dev curriculum!",
+			  "MDN Web Docs offers excellent guides on HTML, CSS, and JavaScript.",
+			  "Traversy Media on YouTube has solid crash courses for web development."
+			]
+		  },
+		  {
+			"tag": "data_science",
+			"patterns": ["Where to learn data science?", "Best data science courses", "How to get started with data analysis?", "Recommend data science platforms", "Free data science resources"],
+			"responses": [
+			  "Kaggle offers free courses and datasets to practice data science!",
+			  "Try Coursera’s Data Science Specialization by Johns Hopkins.",
+			  "The YouTube channel StatQuest is great for understanding stats and machine learning."
+			]
+		  },
+		  {
+			"tag": "mobile_dev",
+			"patterns": ["How to start mobile app development?", "Best resources for app development", "Where to learn Android or iOS coding?", "Recommend mobile dev tutorials", "Free mobile dev resources"],
+			"responses": [
+			  "Google’s Android Developer Fundamentals course is a solid starting point!",
+			  "Swift.org has free resources for learning iOS development with Swift.",
+			  "Check out Flutter’s official docs for cross-platform app development."
+			]
+		  },
+		  {
+			"tag": "game_development",
+			"patterns": ["How to learn game development?", "Best game dev courses", "Where to start making games?", "Recommend game dev resources", "Free game development tutorials"],
+			"responses": [
+			  "Unity’s official tutorials are perfect for beginners in game dev!",
+			  "Try Godot’s documentation for a free, open-source game engine.",
+			  "Brackeys on YouTube has awesome game development tutorials for Unity."
+			]
+		  },
+		  {
+			"tag": "cybersecurity",
+			"patterns": ["Where to learn cybersecurity?", "Best cybersecurity courses", "How to start in cybersecurity?", "Recommend security learning platforms", "Free cybersecurity resources"],
+			"responses": [
+			  "Hack The Box is a great platform to practice cybersecurity skills!",
+			  "Try Cybrary for free and paid cybersecurity courses.",
+			  "The book 'The Web Application Hacker’s Handbook' is a solid resource."
+			]
+		  },
+		  {
+			"tag": "machine_learning",
+			"patterns": ["How to learn machine learning?", "Best ML courses", "Where to start with machine learning?", "Recommend ML platforms", "Free machine learning resources"],
+			"responses": [
+			  "Andrew Ng’s Machine Learning course on Coursera is a classic!",
+			  "Fast.ai offers practical, free machine learning courses.",
+			  "TensorFlow’s official tutorials are great for hands-on ML projects."
+			]
+		  },
+		  {
+			"tag": "cloud_computing",
+			"patterns": ["Where to learn cloud computing?", "Best cloud computing courses", "How to start with cloud tech?", "Recommend cloud learning platforms", "Free cloud resources"],
+			"responses": [
+			  "AWS offers a free tier and training through AWS Skill Builder!",
+			  "Try Google Cloud’s free labs on Qwiklabs.",
+			  "A Cloud Guru has excellent courses for AWS, Azure, and GCP."
+			]
+		  },
+		  {
+			"tag": "greetings",
+			"patterns": ["Hello!", "Hi there", "How’s it going?", "Good morning", "Hey, what’s up?"],
+			"responses": [
+			  "Hi! How can I assist you today?",
+			  "Hello there! What’s on your mind?",
+			  "Hey! Good to see you—how can I help?"
+			]
+		  },
+		  {
+			"tag": "riddles",
+			"patterns": ["Tell me a riddle", "What’s a good riddle?", "Give me a puzzle to solve", "Can you share a riddle?", "I want a brain teaser"],
+			"responses": [
+			  "Here’s one: I speak without a mouth and hear without ears. What am I? (Answer: An echo)",
+			  "Try this: What has keys but can’t open locks? (Answer: A piano)",
+			  "Here’s a riddle: The more you take, the more you leave behind. What am I? (Answer: Footsteps)"
+			]
+		  },
+		  {
+			"tag": "basic_math",
+			"patterns": ["Help with math", "Where to learn basic math?", "How to improve math skills?", "Recommend math resources", "Free math tutorials"],
+			"responses": [
+			  "Khan Academy has free, awesome math lessons for all levels!",
+			  "Check out Math is Fun for simple explanations and examples.",
+			  "PatrickJMT on YouTube is great for basic math tutorials."
+			]
+		  },
+		  {
+			"tag": "general_knowledge",
+			"patterns": ["Tell me something interesting", "What’s a fun fact?", "Give me a trivia question", "Share some knowledge", "What should I know?"],
+			"responses": [
+			  "Did you know octopuses have three hearts and can change color to blend in?",
+			  "Here’s a trivia question: What’s the smallest country in the world? (Answer: Vatican City)",
+			  "Fun fact: Honey never spoils—archeologists found edible honey in ancient tombs!"
+			]
+		  },
+		  {
+			"tag": "dsa",
+			"patterns": ["How to learn Data Structures and Algorithms?", "Best DSA resources for B.Tech", "Where to start DSA for CSE?", "Recommend DSA courses", "Free DSA tutorials"],
+			"responses": [
+			  "GeeksforGeeks has amazing DSA tutorials tailored for B.Tech students!",
+			  "Try 'Data Structures and Algorithms' by Abdul Bari on Udemy.",
+			  "LeetCode is perfect for practicing DSA problems with solutions."
+			]
+		  },
+		  {
+			"tag": "operating_systems",
+			"patterns": ["Where to learn Operating Systems?", "Best OS resources for CSE", "How to understand OS concepts?", "Recommend OS study materials", "Free OS tutorials"],
+			"responses": [
+			  "The book 'Operating System Concepts' by Silberschatz is a must-read!",
+			  "Check out Neso Academy’s OS playlist on YouTube for clear explanations.",
+			  "OSDev.org has free resources if you’re into OS development."
+			]
+		  },
+		  {
+			"tag": "database_management",
+			"patterns": ["How to learn DBMS?", "Best DBMS resources for B.Tech CSE", "Where to start with databases?", "Recommend DBMS courses", "Free database tutorials"],
+			"responses": [
+			  "W3Schools has simple SQL tutorials to get started with DBMS!",
+			  "Try 'Database Systems' by Elmasri and Navathe for in-depth learning.",
+			  "FreeCodeCamp’s SQL and database course is great for beginners."
+			]
+		  },
+		  {
+			"tag": "computer_networks",
+			"patterns": ["Where to learn Computer Networks?", "Best networking resources for CSE", "How to start with networking?", "Recommend network courses", "Free networking tutorials"],
+			"responses": [
+			  "Cisco’s Networking Basics on Coursera is a solid start for B.Tech students!",
+			  "The book 'Computer Networking: A Top-Down Approach' by Kurose is excellent.",
+			  "NetworkChuck on YouTube offers fun and free networking lessons."
+			]
+		  },
+			{
+			"tag": "artificial_intelligence",
+				"patterns": ["How to learn AI?", "Best AI resources for B.Tech", "Where to start with Artificial Intelligence?", "Recommend AI courses", "Free AI tutorials"],
+				"responses": [
+				  "Stanford’s CS221 AI course on YouTube is a great free resource!",
+				  "Try Elements of AI for a beginner-friendly intro.",
+				  "AI for Everyone by Andrew Ng on Coursera is highly recommended."
+				]
+			  },
+			  {
+				"tag": "computer_architecture",
+				"patterns": ["Where to learn Computer Architecture?", "Best resources for Comp Arch", "How to understand CPU design?", "Recommend architecture materials", "Free arch tutorials"],
+				"responses": [
+				  "'Computer Organization and Design' by Patterson is a CSE staple!",
+				  "NPTEL’s Computer Architecture course is free and detailed.",
+				  "Ben Eater’s YouTube series on building a CPU is amazing."
+				]
+			  },
+			  {
+				"tag": "object_oriented_programming",
+				"patterns": ["How to learn OOP?", "Best OOP resources for CSE", "Where to start with Object-Oriented Programming?", "Recommend OOP tutorials", "Free OOP resources"],
+				"responses": [
+				  "Head First Object-Oriented Analysis and Design is a fun start!",
+				  "GeeksforGeeks has solid OOP tutorials for C++ and Java.",
+				  "LearnCpp.com offers free OOP lessons with examples."
+				]
+			  },
+			  {
+				"tag": "theory_of_computation",
+				"patterns": ["How to learn Theory of Computation?", "Best TOC resources for B.Tech", "Where to start with automata?", "Recommend TOC materials", "Free TOC tutorials"],
+				"responses": [
+				  "'Introduction to the Theory of Computation' by Sipser is a classic!",
+				  "Neso Academy’s TOC playlist on YouTube is super helpful.",
+				  "Gate Smashers has free TOC lectures for CSE students."
+				]
+			  },
+			  {
+				"tag": "compiler_design",
+				"patterns": ["Where to learn Compiler Design?", "Best compiler resources for CSE", "How to understand compilers?", "Recommend compiler courses", "Free compiler tutorials"],
+				"responses": [
+				  "The 'Dragon Book' (Compilers: Principles, Techniques, Tools) is legendary!",
+				  "NPTEL’s Compiler Design course is free and comprehensive.",
+				  "Check out Stanford’s Compilers course on edX."
+				]
+			  },
+			  {
+				"tag": "web_technologies",
+				"patterns": ["How to learn web tech?", "Best web tech resources for B.Tech", "Where to start with web development?", "Recommend web tech tutorials", "Free web tech resources"],
+				"responses": [
+				  "FreeCodeCamp’s Responsive Web Design course is a great start!",
+				  "MDN Web Docs covers HTML, CSS, and JS in depth.",
+				  "The Net Ninja on YouTube has awesome web tech tutorials."
+				]
+			  },
+			  {
+				"tag": "software_testing",
+				"patterns": ["How to learn Software Testing?", "Best testing resources for CSE", "Where to start with testing?", "Recommend testing courses", "Free testing tutorials"],
+				"responses": [
+				  "Udemy’s 'Software Testing Masterclass' by Rahul Shetty is solid!",
+				  "Test Automation University offers free testing courses.",
+				  "Guru99 has free software testing tutorials for beginners."
+				]
+			  },
+			  {
+				"tag": "distributed_systems",
+				"patterns": ["Where to learn Distributed Systems?", "Best DS resources for B.Tech", "How to understand distributed computing?", "Recommend DS materials", "Free DS tutorials"],
+				"responses": [
+				  "'Distributed Systems' by Tanenbaum is a great textbook!",
+				  "MIT’s 6.824 Distributed Systems course is free online.",
+				  "Check out Distributed Systems lectures by Martin Kleppmann."
+				]
+			  },
+			  {
+				"tag": "cryptography",
+				"patterns": ["How to learn Cryptography?", "Best crypto resources for CSE", "Where to start with encryption?", "Recommend cryptography courses", "Free crypto tutorials"],
+				"responses": [
+				  "'Cryptography and Network Security' by Stallings is a top pick!",
+				  "Coursera’s Cryptography I by Stanford is excellent.",
+				  "Crypto 101 is a free eBook for beginners."
+				]
+			  },
+			  {
+				"tag": "big_data",
+				"patterns": ["How to learn Big Data?", "Best Big Data resources for B.Tech", "Where to start with Hadoop?", "Recommend Big Data courses", "Free Big Data tutorials"],
+				"responses": [
+				  "EdX’s Big Data Fundamentals by UC San Diego is a solid start!",
+				  "Hadoop’s official documentation has free tutorials.",
+				  "Simplilearn’s Big Data Hadoop YouTube playlist is great."
+				]
+			  },
+			  {
+				"tag": "embedded_systems",
+				"patterns": ["Where to learn Embedded Systems?", "Best embedded resources for CSE", "How to start with microcontrollers?", "Recommend embedded courses", "Free embedded tutorials"],
+				"responses": [
+				  "'The Art of Electronics' by Horowitz is a classic for hardware basics!",
+				  "Try Embedded Systems on Coursera by UC Boulder.",
+				  "ElectroBoom on YouTube has fun embedded tutorials."
+				]
+			  },
+			  {
+				"tag": "algorithm_design",
+				"patterns": ["How to learn Algorithm Design?", "Best algo resources for B.Tech", "Where to start with algorithms?", "Recommend algo courses", "Free algo tutorials"],
+				"responses": [
+				  "'Introduction to Algorithms' by Cormen (CLRS) is a must-have!",
+				  "Coursera’s Algorithms by Princeton is free and top-notch.",
+				  "HackerRank has great algorithm practice problems."
+				]
+			  },
+			  {
+				"tag": "computer_graphics",
+				"patterns": ["How to learn Computer Graphics?", "Best graphics resources for CSE", "Where to start with CG?", "Recommend graphics courses", "Free CG tutorials"],
+				"responses": [
+				  "'Computer Graphics: Principles and Practice' by Foley is excellent!",
+				  "Learn OpenGL’s free tutorials are perfect for graphics.",
+				  "The Cherno on YouTube has great CG lessons."
+				]
+			  },
+			  {
+				"tag": "blockchain",
+				"patterns": ["How to learn Blockchain?", "Best blockchain resources for B.Tech", "Where to start with blockchain?", "Recommend blockchain courses", "Free blockchain tutorials"],
+				"responses": [
+				  "Coursera’s Blockchain Basics by University at Buffalo is a good intro!",
+				  "Ethereum.org has free developer resources.",
+				  "Ivan on Tech’s YouTube channel covers blockchain well."
+				]
+			  },
+			  {
+				"tag": "iot",
+				"patterns": ["How to learn IoT?", "Best IoT resources for CSE", "Where to start with Internet of Things?", "Recommend IoT courses", "Free IoT tutorials"],
+				"responses": [
+				  "Udemy’s IoT Fundamentals by Rahul Jain is beginner-friendly!",
+				  "Arduino’s official site has free IoT project tutorials.",
+				  "The IoT Academy on YouTube has solid lessons."
+				]
+			  },
+			  {
+				"tag": "parallel_computing",
+				"patterns": ["Where to learn Parallel Computing?", "Best parallel resources for B.Tech", "How to understand parallel programming?", "Recommend parallel courses", "Free parallel tutorials"],
+				"responses": [
+				  "'Parallel Programming' by Pacheco is a great textbook!",
+				  "Udacity’s Intro to Parallel Programming with CUDA is free.",
+				  "NPTEL’s Parallel Computing course is detailed and free."
+				]
+			  },
+			  {
+				"tag": "unix_systems",
+				"patterns": ["How to learn UNIX?", "Best UNIX resources for CSE", "Where to start with UNIX/Linux?", "Recommend UNIX tutorials", "Free UNIX resources"],
+				"responses": [
+				  "'The UNIX Programming Environment' by Kernighan is a classic!",
+				  "Linux Journey offers free UNIX/Linux lessons.",
+				  "OverTheWire’s Wargames teach UNIX through fun challenges."
+				]
+			  },
+			  {
+				"tag": "mobile_computing",
+				"patterns": ["How to learn Mobile Computing?", "Best mobile resources for B.Tech", "Where to start with mobile tech?", "Recommend mobile courses", "Free mobile tutorials"],
+				"responses": [
+				  "Google’s Android Developer Basics is free and practical!",
+				  "Udemy’s Mobile Computing with Android by Tim Buchalka is great.",
+				  "Flutter’s official docs offer free mobile dev tutorials."
+				]
+			  },
+			  {
+				"tag": "project_management",
+				"patterns": ["How to learn Project Management for CSE?", "Best PM resources for B.Tech", "Where to start with software project management?", "Recommend PM courses", "Free PM tutorials"],
+				"responses": [
+				  "'A Guide to the Project Management Body of Knowledge' (PMBOK) is key!",
+				  "Coursera’s Software Project Management by Alberta is excellent.",
+				  "PM4DEV offers free project management eBooks."
+				]
+			  },
+			  {
+				"tag": "factual_info",
+				"patterns": [
+				  "What is the largest desert in the world?",
+				  "Who invented the telephone?",
+				  "What year did the Titanic sink?",
+				  "Where is the Eiffel Tower located?",
+				  "What’s the population of Japan?"
+				],
+				"responses": [
+				  "The largest desert is Antarctica, surprisingly!",
+				  "Alexander Graham Bell invented the telephone.",
+				  "The Titanic sank in 1912."
+				]
+			  },
+			  {
+				"tag": "how_to",
+				"patterns": [
+				  "How do I tie a tie?",
+				  "How to set up a Wi-Fi router?",
+				  "How can I update my phone’s software?",
+				  "How do I make a paper airplane?",
+				  "How to clean a laptop screen safely?"
+				],
+				"responses": [
+				  "Start with a simple knot like the Four-in-Hand!",
+				  "Plug it in and follow the setup wizard on the box.",
+				  "Go to Settings and check for updates."
+				]
+			  },
+			  {
+				"tag": "transactional",
+				"patterns": [
+				  "Can you reserve a table for two tonight?",
+				  "Order a large coffee for me.",
+				  "Can you schedule a meeting for tomorrow?",
+				  "Book me a taxi to the airport.",
+				  "Send a gift to my friend’s address."
+				],
+				"responses": [
+				  "I’ll need some details—like time and location!",
+				  "Got it, any specific coffee type?",
+				  "Sure, what time works for you?"
+				]
+			  },
+			  {
+				"tag": "clarification",
+				"patterns": [
+				  "Do you mean the red one or the blue one?",
+				  "Are you asking about today or tomorrow?",
+				  "Did you say ‘cat’ or ‘cap’?",
+				  "Can you confirm your phone number?",
+				  "Is that spelled J-O-H-N or J-O-N?"
+				],
+				"responses": [
+				  "Just to be sure, let’s clarify that!",
+				  "I’ll go with what you confirm.",
+				  "Could you repeat that for me?"
+				]
+			  },
+			  {
+				"tag": "opinion",
+				"patterns": [
+				  "What do you think about renewable energy?",
+				  "Should everyone learn to code?",
+				  "What’s your take on space exploration?",
+				  "Is social media good or bad?",
+				  "Tell me your thoughts on remote work."
+				],
+				"responses": [
+				  "I think renewable energy is a game-changer!",
+				  "It’s a personal choice—coding’s not for all.",
+				  "Space exploration could unlock amazing discoveries."
+				]
+			  },
+			  {
+				"tag": "personalized",
+				"patterns": [
+				  "What’s my next appointment?",
+				  "Did I miss any calls yesterday?",
+				  "Set an alarm for 7 AM tomorrow.",
+				  "What’s the weather like where I am?",
+				  "Remind me to buy milk later."
+				],
+				"responses": [
+				  "I’d need your calendar to check that!",
+				  "I’ll set that alarm for you.",
+				  "Can you tell me your location for the weather?"
+				]
+			  },
+			  {
+				"tag": "casual_chat",
+				"patterns": [
+				  "What’s your favorite movie?",
+				  "How’s the weather where you are?",
+				  "Got any weekend plans?",
+				  "Tell me something fun about yourself.",
+				  "What’s the best thing about today?"
+				],
+				"responses": [
+				  "I’m a fan of sci-fi—how about you?",
+				  "It’s sunny here, metaphorically speaking!",
+				  "I’d say relaxing with a good chat is a plan."
+				]
+			  },
+			  {
+				"tag": "emotional_support",
+				"patterns": [
+				  "I’m feeling anxious, any advice?",
+				  "What do I do when I’m overwhelmed?",
+				  "I failed my test, now what?",
+				  "I’m lonely tonight.",
+				  "How do I cheer up after a bad day?"
+				],
+				"responses": [
+				  "Take a deep breath—want to talk it out?",
+				  "I’m here for you, even just to listen.",
+				  "It’s okay to feel down; try something small you enjoy."
+				]
+			  },
+			  {
+				"tag": "error_handling",
+				"patterns": [
+				  "What if you crash while helping me?",
+				  "Why didn’t you answer my last question?",
+				  "What do I do if you give me wrong info?",
+				  "Can you fix a mistake you made?",
+				  "What happens if I confuse you?"
+				],
+				"responses": [
+				  "I’ll reboot and try again—no worries!",
+				  "Oops, let’s backtrack—what was your question?",
+				  "If I goof, just let me know, and I’ll adjust."
+				]
+			  },
+			  {
+				"tag": "multi_turn",
+				"patterns": [
+				  "Can you explain that again?",
+				  "What else should I know about this?",
+				  "Why does that matter?",
+				  "Give me another example.",
+				  "How does that connect to what you said?"
+				],
+				"responses": [
+				  "Sure, I’ll break it down further!",
+				  "There’s more—want the details?",
+				  "It ties into the bigger picture like this..."
+				]
+			  },
+			  {
+				"tag": "comparative",
+				"patterns": [
+				  "Which is faster: train or plane?",
+				  "Compare laptops and tablets for work.",
+				  "What’s the difference between tea and coffee?",
+				  "Is biking better than walking for fitness?",
+				  "Which language is easier: Spanish or French?"
+				],
+				"responses": [
+				  "Planes win for speed, trains for scenery!",
+				  "Laptops have more power, tablets are portable.",
+				  "It depends on your goals—here’s a breakdown..."
+				]
+			  },
+			  {
+				"tag": "healthcare",
+				"patterns": [
+				  "What causes a headache?",
+				  "How do I know if I have a fever?",
+				  "What’s the treatment for a cold?",
+				  "Can stress affect my health?",
+				  "How do I check my pulse?"
+				],
+				"responses": [
+				  "Headaches can come from stress or dehydration.",
+				  "A thermometer’s your best bet for fever!",
+				  "Rest and fluids help with colds—nothing fancy."
+				]
+			  },
+			  {
+				"tag": "finance",
+				"patterns": [
+				  "How do I save money each month?",
+				  "What’s a stock market crash?",
+				  "How does a credit score work?",
+				  "Can I invest with little money?",
+				  "What’s the benefit of a savings account?"
+				],
+				"responses": [
+				  "Budgeting’s key—track your spending!",
+				  "A crash is a sudden drop in stock prices.",
+				  "Even $10 can start an investment—try apps!"
+				]
+			  },
+			  {
+				"tag": "education",
+				"patterns": [
+				  "What’s the Pythagorean theorem?",
+				  "How does photosynthesis work?",
+				  "Who discovered gravity?",
+				  "What’s the difference between mitosis and meiosis?",
+				  "How do I solve a quadratic equation?"
+				],
+				"responses": [
+				  "It’s a² + b² = c² for right triangles!",
+				  "Plants turn sunlight into energy—cool, right?",
+				  "Isaac Newton gets the gravity credit."
+				]
+			  },
+			  {
+				"tag": "factual_info",
+				"patterns": [
+				  "What’s the longest river in the world?",
+				  "Who wrote the Declaration of Independence?",
+				  "What’s the boiling point of water?",
+				  "Which planet is the largest in our solar system?",
+				  "When was the internet invented?"
+				],
+				"responses": [
+				  "The Nile takes the crown for longest river!",
+				  "Thomas Jefferson penned the Declaration.",
+				  "Water boils at 100°C at sea level."
+				]
+			  },
+			  {
+				"tag": "how_to",
+				"patterns": [
+				  "How do I plant a seedling?",
+				  "How to fix a leaky faucet?",
+				  "How can I take a screenshot on my laptop?",
+				  "How do I knit a scarf?",
+				  "How to change a car tire?"
+				],
+				"responses": [
+				  "Dig a small hole and keep it watered!",
+				  "Turn off the water and tighten the valve.",
+				  "Try pressing PrtScn or Cmd+Shift+3 on Mac."
+				]
+			  },
+			  {
+				"tag": "transactional",
+				"patterns": [
+				  "Can you buy me concert tickets?",
+				  "Schedule a dentist appointment for next week.",
+				  "Order a bouquet of flowers for delivery.",
+				  "Book a hotel room for Friday night.",
+				  "Can you pay my phone bill?"
+				],
+				"responses": [
+				  "Which concert? I’ll need details!",
+				  "What time works for your dentist visit?",
+				  "Flowers ordered—any specific type?"
+				]
+			  },
+			  {
+				"tag": "clarification",
+				"patterns": [
+				  "Are we talking dollars or euros?",
+				  "Did you want the 5 PM or 6 PM slot?",
+				  "Is that ‘Smith’ with an ‘S’ or ‘Schmidt’?",
+				  "Do you mean the book or the movie?",
+				  "Can you verify your date of birth?"
+				],
+				"responses": [
+				  "Let’s clear that up—what did you mean?",
+				  "I’ll confirm once you specify!",
+				  "Just double-checking for accuracy."
+				]
+			  },
+			  {
+				"tag": "opinion",
+				"patterns": [
+				  "What’s your view on artificial intelligence?",
+				  "Is it worth traveling abroad?",
+				  "What do you think of vegan diets?",
+				  "Should schools ban homework?",
+				  "How do you feel about electric cars?"
+				],
+				"responses": [
+				  "AI’s fascinating—endless potential!",
+				  "Travel’s a mixed bag; depends on you.",
+				  "Electric cars are the future, I’d say."
+				]
+			  },
+			  {
+				"tag": "personalized",
+				"patterns": [
+				  "What’s my horoscope for today?",
+				  "Did I forget any birthdays this month?",
+				  "Set a timer for 20 minutes.",
+				  "What’s the traffic like on my commute?",
+				  "Remind me to water my plants tomorrow."
+				],
+				"responses": [
+				  "What’s your sign for that horoscope?",
+				  "Timer’s set—20 minutes starting now!",
+				  "I’d need your route to check traffic."
+				]
+			  },
+			  {
+				"tag": "casual_chat",
+				"patterns": [
+				  "What’s your favorite food?",
+				  "How do you spend your free time?",
+				  "Got a good book recommendation?",
+				  "What’s the coolest place you’ve been?",
+				  "How’s your day going so far?"
+				],
+				"responses": [
+				  "I’d pick pizza if I could eat!",
+				  "I’d love a good sci-fi book—any tips?",
+				  "My day’s great with chats like this!"
+				]
+			  },
+			  {
+				"tag": "emotional_support",
+				"patterns": [
+				  "I’m nervous about a presentation, help!",
+				  "What do I do if I feel lost?",
+				  "I’m angry after an argument.",
+				  "I feel like giving up today.",
+				  "How do I stay calm under pressure?"
+				],
+				"responses": [
+				  "You’ve got this—practice a deep breath!",
+				  "Feeling lost happens; let’s sort it out.",
+				  "Take a moment—want to vent?"
+				]
+			  },
+			  {
+				"tag": "error_handling",
+				"patterns": [
+				  "What if you freeze mid-conversation?",
+				  "Why did you skip my question?",
+				  "What do I do if your answer’s off?",
+				  "Can you correct yourself if you’re wrong?",
+				  "What if I ask something too vague?"
+				],
+				"responses": [
+				  "I’ll restart and get back on track!",
+				  "My bad—let’s retry that question.",
+				  "Point out my error, and I’ll fix it!"
+				]
+			  },
+			  {
+				"tag": "multi_turn",
+				"patterns": [
+				  "What happens next?",
+				  "Can you dive deeper into that?",
+				  "How does that work exactly?",
+				  "Tell me another detail.",
+				  "Why did you choose that example?"
+				],
+				"responses": [
+				  "Next step? Here’s what follows...",
+				  "I’ll zoom in—want specifics?",
+				  "That’s a great question—here’s more!"
+				]
+			  },
+			  {
+				"tag": "comparative",
+				"patterns": [
+				  "Which is cheaper: renting or buying?",
+				  "Compare cats and dogs as pets.",
+				  "What’s better for gaming: PC or console?",
+				  "Is tea healthier than soda?",
+				  "Which is faster: email or texting?"
+				],
+				"responses": [
+				  "Renting’s often cheaper short-term!",
+				  "Cats are low-maintenance, dogs are social.",
+				  "PC’s got power, consoles are simple."
+				]
+			  },
+			  {
+				"tag": "healthcare",
+				"patterns": [
+				  "What’s a normal blood pressure range?",
+				  "How do I treat a minor burn?",
+				  "What are signs of dehydration?",
+				  "Can lack of sleep cause headaches?",
+				  "How do I stop a nosebleed?"
+				],
+				"responses": [
+				  "120/80 is a typical blood pressure!",
+				  "Cool a burn with water, not ice.",
+				  "Drink water if you’re dizzy or dry-mouthed."
+				]
+			  },
+			  {
+				"tag": "finance",
+				"patterns": [
+				  "What’s a good interest rate for a loan?",
+				  "How do I start a retirement fund?",
+				  "What’s a mutual fund?",
+				  "Can I avoid credit card debt?",
+				  "How do taxes work for freelancers?"
+				],
+				"responses": [
+				  "Aim for under 5% on loans if possible!",
+				  "A 401(k) or IRA is a solid start.",
+				  "Pay on time to dodge credit card debt."
+				]
+			  },
+			  {
+				"tag": "education",
+				"patterns": [
+				  "What’s the formula for area of a circle?",
+				  "How do earthquakes happen?",
+				  "Who was Cleopatra?",
+				  "What’s the periodic table used for?",
+				  "How do I calculate a percentage?"
+				],
+				"responses": [
+				  "It’s πr² for a circle’s area!",
+				  "Earthquakes come from tectonic shifts.",
+				  "Cleopatra ruled Egypt—quite a story!"
+				]
+			  },
+			  {
+				"tag": "geography",
+				"patterns": [
+				  "What’s the smallest country by land area?",
+				  "Which continent has the most deserts?",
+				  "What’s the deepest ocean trench?",
+				  "How many time zones does Russia have?",
+				  "Where is the Amazon rainforest located?"
+				],
+				"responses": [
+				  "Vatican City’s the smallest—tiny but mighty!",
+				  "Antarctica’s got deserts, but Africa wins for variety.",
+				  "The Mariana Trench is the deepest dive!"
+				]
+			  },
+			  {
+				"tag": "cooking",
+				"patterns": [
+				  "How do I boil an egg perfectly?",
+				  "How to chop an onion without crying?",
+				  "How can I make homemade pasta?",
+				  "How do I grill chicken evenly?",
+				  "How to store fresh herbs longer?"
+				],
+				"responses": [
+				  "Boil for 10 minutes, then cool in ice water!",
+				  "Chill the onion first—no tears!",
+				  "Mix flour and eggs, roll it thin—pasta time!"
+				]
+			  },
+			  {
+				"tag": "travel",
+				"patterns": [
+				  "Can you find me a train to Paris?",
+				  "Book a guided tour of Rome for next month.",
+				  "Order a rental car for my trip.",
+				  "Reserve a spot on a hiking expedition.",
+				  "Can you get me a visa application form?"
+				],
+				"responses": [
+				  "When do you want to head to Paris?",
+				  "Rome tour booked—any preferred date?",
+				  "Car’s ready—what type do you need?"
+				]
+			  },
+			  {
+				"tag": "shopping",
+				"patterns": [
+				  "Do you mean the black shoes or the brown ones?",
+				  "Is that size medium or large?",
+				  "Did you want express shipping or standard?",
+				  "Are we talking cash or card payment?",
+				  "Can you confirm the store location?"
+				],
+				"responses": [
+				  "Let’s nail down which one you want!",
+				  "I’ll go with whatever you clarify.",
+				  "Just checking—your call!"
+				]
+			  },
+			  {
+				"tag": "technology",
+				"patterns": [
+				  "What’s your take on 5G networks?",
+				  "Are smart homes worth the hype?",
+				  "What do you think of wearable tech?",
+				  "Should we fear quantum computing?",
+				  "Is open-source software the future?"
+				],
+				"responses": [
+				  "5G’s fast but still rolling out—exciting!",
+				  "Smart homes are cool but pricey.",
+				  "Open-source has huge potential—community power!"
+				]
+			  },
+			  {
+				"tag": "fitness",
+				"patterns": [
+				  "What’s a good workout for me today?",
+				  "Did I meet my step goal yesterday?",
+				  "Set a reminder for my yoga class.",
+				  "How many calories did I burn running?",
+				  "Plan a stretching routine for me."
+				],
+				"responses": [
+				  "How about a quick HIIT session?",
+				  "I’d need your tracker data to check steps!",
+				  "Reminder set—when’s yoga?"
+				]
+			  },
+			  {
+				"tag": "hobbies",
+				"patterns": [
+				  "What’s your favorite board game?",
+				  "Do you enjoy painting or drawing?",
+				  "Got any gardening tips to share?",
+				  "What’s the best part of photography?",
+				  "How do you like to unwind with music?"
+				],
+				"responses": [
+				  "I’d pick chess—strategy’s my jam!",
+				  "Gardening’s relaxing—start with herbs!",
+				  "Photography’s all about capturing the moment."
+				]
+			  },
+			  {
+				"tag": "relationships",
+				"patterns": [
+				  "I had a fight with my friend, what now?",
+				  "What do I say to someone who’s upset?",
+				  "I feel ignored by my partner.",
+				  "I’m nervous about meeting new people.",
+				  "How do I rebuild trust after a mistake?"
+				],
+				"responses": [
+				  "Give it time—maybe reach out calmly?",
+				  "Just listen—it means a lot to them.",
+				  "Feeling ignored sucks; want to talk it through?"
+				]
+			  },
+			  {
+				"tag": "tech_support",
+				"patterns": [
+				  "What if my screen goes blank?",
+				  "Why isn’t my printer working?",
+				  "What do I do if the app crashes?",
+				  "Can you help if my Wi-Fi drops?",
+				  "What if I forget my password?"
+				],
+				"responses": [
+				  "Try restarting—classic fix!",
+				  "Check the cables or drivers for the printer.",
+				  "Wi-Fi’s tricky—reboot the router?"
+				]
+			  },
+			  {
+				"tag": "history",
+				"patterns": [
+				  "What happened after the Roman Empire fell?",
+				  "Can you tell me more about the Renaissance?",
+				  "Why did the Industrial Revolution start?",
+				  "Who else was involved in that event?",
+				  "How did that war end?"
+				],
+				"responses": [
+				  "After Rome, Europe split into kingdoms!",
+				  "The Renaissance was art and ideas booming.",
+				  "More details? I’ve got plenty!"
+				]
+			  },
+			  {
+				"tag": "entertainment",
+				"patterns": [
+				  "Which is funnier: sitcoms or stand-up?",
+				  "Compare streaming services like Netflix and Hulu.",
+				  "What’s better: movies or TV series?",
+				  "Is live theater more exciting than cinema?",
+				  "Which is catchier: pop or rock music?"
+				],
+				"responses": [
+				  "Stand-up’s raw, sitcoms are cozy—tough call!",
+				  "Netflix has variety, Hulu’s got live TV.",
+				  "Movies are quick, series go deep."
+				]
+			  },
+			  {
+				"tag": "astronomy",
+				"patterns": [
+				  "What’s a black hole made of?",
+				  "How do stars form in space?",
+				  "What causes a solar eclipse?",
+				  "Can we live on Mars someday?",
+				  "What’s the brightest star we can see?"
+				],
+				"responses": [
+				  "Black holes are collapsed stars—wild stuff!",
+				  "Stars form from gas clouds collapsing.",
+				  "A solar eclipse is the moon blocking the sun."
+				]
+			  },
+			  {
+				"tag": "gardening",
+				"patterns": [
+				  "What’s the best soil for tomatoes?",
+				  "How do I keep pests off my roses?",
+				  "When should I plant tulip bulbs?",
+				  "Can I grow herbs indoors?",
+				  "What’s companion planting?"
+				],
+				"responses": [
+				  "Tomatoes love rich, well-drained soil!",
+				  "Try neem oil for rose pests.",
+				  "Plant tulips in fall for spring blooms."
+				]
+			  },
+			  {
+				"tag": "photography",
+				"patterns": [
+				  "What’s the best lens for portraits?",
+				  "How do I adjust camera shutter speed?",
+				  "What’s ISO and why does it matter?",
+				  "Can I take good photos with a phone?",
+				  "How do I edit lighting in pictures?"
+				],
+				"responses": [
+				  "A 50mm lens is perfect for portraits!",
+				  "Shutter speed controls motion—fast or slow.",
+				  "Phone cameras rock—use good light!"
+				]
+			  }
+
+
+
+
+
+
+	]
+}
