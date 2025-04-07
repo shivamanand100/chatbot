@@ -20,7 +20,6 @@ import requests
 # Install and download required nltk resources
 nltk.download('punkt')
 nltk.download('wordnet')
-!pip install python-dotenv
 from dotenv import load_dotenv # import load_dotenv from dotenv package
 import datetime
 # Load environment variables
