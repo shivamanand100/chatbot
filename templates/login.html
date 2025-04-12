@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login to access the AI Chatbot" />
+  <title>Login - AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h2>Login to Chatbot</h2>
+    <form action="/login" method="post" id="login-form" novalidate>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          required
+          autocomplete="username"
+          aria-label="Username"
+        />
+        <span class="error" id="username-error">Username is required</span>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          autocomplete="current-password"
+          aria-label="Password"
+        />
+        <button
+          type="button"
+          class="password-toggle"
+          id="password-toggle"
+          aria-label="Show password"
+          data-tooltip="Show password"
+        >
+          <i class="fa fa-eye"></i>
+        </button>
+        <span class="error" id="password-error">Password is required</span>
+      </div>
+      <button type="submit" id="login-btn">Login</button>
+    </form>
+
+    <div class="social-login">
+      <p>Or login with:</p>
+      <a class="social-btn" href="#" aria-label="Login with GitHub"><i class="fab fa-github"></i> GitHub</a>
+      <a class="social-btn" href="#" aria-label="Login with Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+      <a class="social-btn" href="#" aria-label="Login with Google"><i class="fab fa-google"></i> Google</a>
+    </div>
+
+    <p>
+      <a href="#">Forgot password?</a> |
+      <a href="{{ url_for('register') }}">New user? Register here</a>
+
+    </p>
+  </main>
+
+  <script>
+    // Password toggle functionality
+    const passwordInput = document.getElementById('password');
+    const passwordToggle = document.getElementById('password-toggle');
+    const passwordIcon = passwordToggle.querySelector('i');
+
+    passwordToggle.addEventListener('click', () => {
+      const isPassword = passwordInput.type === 'password';
+      passwordInput.type = isPassword ? 'text' : 'password';
+      passwordIcon.classList.toggle('fa-eye', isPassword);
+      passwordIcon.classList.toggle('fa-eye-slash', !isPassword);
+      passwordToggle.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+      passwordToggle.dataset.tooltip = isPassword ? 'Hide password' : 'Show password';
+    });
+
+    // Basic form validation
+    const form = document.getElementById('login-form');
+    const usernameInput = document.getElementById('username');
+    const usernameError = document.getElementById('username-error');
+    const passwordError = document.getElementById('password-error');
+    const loginBtn = document.getElementById('login-btn');
+
+    form.addEventListener('submit', (e) => {
+      let hasError = false;
+
+      if (!usernameInput.value.trim()) {
+        usernameError.style.display = 'block';
+        hasError = true;
+      } else {
+        usernameError.style.display = 'none';
+      }
+
+      if (!passwordInput.value) {
+        passwordError.style.display = 'block';
+        hasError = true;
+      } else {
+        passwordError.style.display = 'none';
+      }
+
+      if (hasError) {
+        e.preventDefault();
+        return;
+      }
+
+      loginBtn.disabled = true;
+      loginBtn.textContent = 'Logging in...';
+    });
+  </script>
+</body>
+</html>

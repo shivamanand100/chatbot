@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for the AI Chatbot" />
+  <title>Register - AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h2>Register</h2>
+    <form action="/register" method="post" id="register-form" novalidate>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          required
+          autocomplete="username"
+          aria-label="Username"
+        />
+        <span class="error" id="username-error">Username is required</span>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          autocomplete="new-password"
+          aria-label="Password"
+        />
+        <button
+          type="button"
+          class="password-toggle"
+          id="password-toggle"
+          aria-label="Show password"
+          data-tooltip="Show password"
+        >
+          <i class="fa fa-eye"></i>
+        </button>
+        <span class="error" id="password-error">Password is required</span>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Confirm password"
+          required
+          autocomplete="new-password"
+          aria-label="Confirm Password"
+        />
+        <button
+          type="button"
+          class="password-toggle"
+          id="confirm-password-toggle"
+          aria-label="Show password"
+          data-tooltip="Show password"
+        >
+          <i class="fa fa-eye"></i>
+        </button>
+        <span class="error" id="confirm-password-error">Passwords do not match</span>
+      </div>
+      <button type="submit" id="register-btn">Register</button>
+    </form>
+    <p><a href="{{ url_for('login') }}">Already have an account? Login here</a></p>
+  </main>
+
+  <script>
+    // Password toggle functionality
+    function setupPasswordToggle(inputId, toggleId) {
+      const input = document.getElementById(inputId);
+      const toggle = document.getElementById(toggleId);
+      const icon = toggle.querySelector('i');
+
+      toggle.addEventListener('click', () => {
+        const isPassword = input.type === 'password';
+        input.type = isPassword ? 'text' : 'password';
+        icon.classList.toggle('fa-eye', isPassword);
+        icon.classList.toggle('fa-eye-slash', !isPassword);
+        toggle.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+        toggle.dataset.tooltip = isPassword ? 'Hide password' : 'Show password';
+      });
+    }
+
+    setupPasswordToggle('password', 'password-toggle');
+    setupPasswordToggle('confirm-password', 'confirm-password-toggle');
+
+    // Form validation
+    const form = document.getElementById('register-form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+    const usernameError = document.getElementById('username-error');
+    const passwordError = document.getElementById('password-error');
+    const confirmPasswordError = document.getElementById('confirm-password-error');
+    const registerBtn = document.getElementById('register-btn');
+
+    form.addEventListener('submit', (e) => {
+      let hasError = false;
+
+      if (!usernameInput.value.trim()) {
+        usernameError.style.display = 'block';
+        hasError = true;
+      } else {
+        usernameError.style.display = 'none';
+      }
+
+      if (!passwordInput.value) {
+        passwordError.style.display = 'block';
+        hasError = true;
+      } else {
+        passwordError.style.display = 'none';
+      }
+
+      if (passwordInput.value !== confirmPasswordInput.value || !confirmPasswordInput.value) {
+        confirmPasswordError.style.display = 'block';
+        hasError = true;
+      } else {
+        confirmPasswordError.style.display = 'none';
+      }
+
+      if (hasError) {
+        e.preventDefault();
+        return;
+      }
+
+      registerBtn.disabled = true;
+      registerBtn.textContent = 'Registering...';
+    });
+  </script>
+</body>
+</html>
