@@ -13,7 +13,7 @@ def chat():
     if not session.get('username'):
         flash('Please log in or register first.', 'error')
         return redirect(url_for('home'))
-    return render_template('chat.html')
+    return render_template('index.html')
 
 @app.route('/login', methods=['POST'])
 def login():
