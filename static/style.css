@@ -232,6 +232,7 @@
   .dot:nth-child(3) {
     animation-delay: 0.4s;
   }
+
   
   @keyframes blink {
     0%, 100% { opacity: 0.2; }
