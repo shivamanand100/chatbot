@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #667eea;
+    --primary-hover: #5a67d8;
+    --text-color: #333;
+    --border-color: #ccc;
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  main.container {
+    background: white;
+    padding: clamp(20px, 5vw, 40px) clamp(15px, 4vw, 30px);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    width: min(100%, 400px);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  .input-group i.fa-user,
+  .input-group i.fa-lock {
+    position: absolute;
+    top: 2.5rem;
+    left: 0.75rem;
+    color: #666;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+  }
+  
+  .input-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  }
+  
+  .input-group input:invalid:not(:placeholder-shown) {
+    border-color: #e3342f;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: color 0.3s, transform 0.1s;
+  }
+  
+  .password-toggle:hover {
+    color: var(--primary-color);
+  }
+  
+  .password-toggle:active {
+    transform: scale(0.95);
+  }
+  
+  .password-toggle:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+  
+  .password-toggle::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    background: #333;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .password-toggle:hover::after {
+    opacity: 1;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background: var(--primary-hover);
+  }
+  
+  button[type="submit"]:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .social-login {
+    margin-top: 1.5rem;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: white;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-btn:hover {
+    background: #555;
+  }
+  
+  .social-btn i {
+    margin-right: 0.5rem;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: #e3342f;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: linear-gradient(135deg, #4a5bb8, #5e3a7d);
+    }
+  
+    main.container {
+      background: #222;
+      color: #ddd;
+    }
+  
+    h2, .input-group label, p {
+      color: #ddd;
+    }
+  
+    .input-group input {
+      background: #333;
+      color: #ddd;
+      border-color: #555;
+    }
+  
+    .input-group i, .password-toggle {
+      color: #bbb;
+    }
+  }
+  .dot {
+    animation: blink 1s infinite;
+    opacity: 0.2;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  
