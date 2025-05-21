@@ -1,0 +1,2174 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hi", "Hello", "Hey there", "Good morning", "Good evening", "What's up?", "Howdy", "Greetings"],
+			"responses": ["Hello! 👋", "Hi there! How can I assist you?", "Nice to see you!", "Hey! What can I do for you today?"]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Bye", "See you later", "Goodbye", "Take care", "I'm leaving", "Have a nice day", "Catch you later"],
+			"responses": ["Goodbye! 👋", "Until next time!", "Take care!", "Feel free to return if you have more questions!"]
+		},
+		{
+			"tag": "programming",
+			"patterns": ["What is programming?", "Explain coding", "Define software development", "What does a programmer do?", "How does coding work?"],
+			"responses": [
+				"Programming is the process of writing instructions for computers to execute tasks.",
+				"Coding involves creating algorithms and translating them into a language computers understand.",
+				"Software development includes designing, coding, testing, and maintaining programs."
+			]
+		},
+		{
+			"tag": "resource",
+			"patterns": ["Where to learn coding?", "Best coding courses", "How to start programming?", "Recommend learning platforms", "Free coding resources"],
+			"responses": [
+				"Try platforms like freeCodeCamp, Codecademy, or Coursera!",
+				"NeuralNine's YouTube channel has great Python tutorials.",
+				"The book 'Automate the Boring Stuff with Python' is a fantastic starting point."
+			]
+		},
+		{
+			"tag": "stocks",
+			"patterns": ["Show my portfolio", "What stocks do I hold?", "Stock balance", "Portfolio status", "Investment summary"],
+			"responses": ["Fetching your stock portfolio... (example: AAPL: 10 shares, TSLA: 5 shares)", "Your current holdings:"]
+		},
+		{
+			"tag": "jokes",
+			"patterns": ["Tell me a joke", "Make me laugh", "Say something funny", "Do you know any jokes?"],
+			"responses": [
+				"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+				"How many programmers does it take to change a lightbulb? None – it’s a hardware problem! 💡"
+			]
+		},
+		{
+			"tag": "time",
+			"patterns": ["What time is it?", "Current time", "Time check", "What's the time?"],
+			"responses": ["It's [TIME] in your local timezone."]
+		},
+		{
+			"tag": "weather",
+			"patterns": ["What's the weather like?", "Weather forecast", "Is it raining?", "Temperature today"],
+			"responses": ["The weather in [LOCATION] is [WEATHER_DETAILS]."]
+		},
+		{
+			"tag": "help",
+			"patterns": ["Help me", "What can you do?", "List commands", "How to use you?"],
+			"responses": [
+				"I can: Explain programming concepts, share learning resources, tell jokes, check stocks/time/weather, and more!",
+				"Try asking about coding, your portfolio, or current time/weather."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["Thank you", "Thanks!", "Appreciate it", "You're awesome"],
+			"responses": ["You're welcome! 😊", "Happy to help!", "Anytime!"]
+		},
+		{
+			"tag": "fallback",
+			"patterns": [],
+			"responses": ["I didn't quite understand that. Could you rephrase?", "Let me connect you to a human agent..."]
+		},
+		{
+			"tag": "Developer",
+			"patterns":["who developed you?","You are developed by who?","Can you tell me about your developer"],
+			"responses":["I was developed by a Shivam Anand who is a 4th year student in Noida Institute of engineering and technology"]
+		},
+		{
+			"tag": "About_me",
+			"patterns":["can you tell me about yourself","what's your name","what is your name"],
+			"responses":["sure, My name is AI Chatbot and I'm developed by Shivam Anand"]
+		 },
+		{
+			"tag": "casual_chat",
+			"patterns": [
+			  "How are you today?",
+			  "What’s up with you?",
+			  "How’s life treating you?",
+			  "What do you do for fun?",
+			  "Got any hobbies?",
+			  "What’s your favorite color?",
+			  "Do you like music?",
+			  "Are you busy right now?"
+			],
+			"responses": [
+			  "I’m a bot, so I’m always ready to help!",
+			  "No feelings, but I’m here to chat!",
+			  "My purpose is to assist you—ask me anything!"
+			]
+		},
+		{
+			"tag": "geography",
+			"patterns": [
+			  "Which is the longest river on Earth?",
+			  "What’s the largest country by land area?",
+			  "Name the biggest ocean globally",
+			  "Which nation has the most people?",
+			  "What’s the smallest continent?",
+			  "Where is the Sahara Desert located?",
+			  "Which mountain is the tallest?",
+			  "What’s the deepest part of the ocean?"
+			],
+			"responses": [
+			  "The Nile River is the longest river in the world.",
+			  "Russia is the largest country by land area.",
+			  "The Pacific Ocean is the largest and deepest ocean.",
+			  "Asia is the most populous continent.",
+			  "Mount Everest is the tallest mountain."
+			]
+		},
+		{
+			"tag": "animals",
+			"patterns": [
+			  "What’s the fastest land animal?",
+			  "Which bird can’t fly?",
+			  "Name the largest mammal",
+			  "What animal lives the longest?",
+			  "Which creature is venomous?",
+			  "Do koalas eat bamboo?",
+			  "How do whales communicate?"
+			],
+			"responses": [
+			  "The cheetah is the fastest land animal (up to 70 mph!).",
+			  "The ostrich is the largest bird and can’t fly.",
+			  "The blue whale is the largest mammal.",
+			  "The Greenland shark can live over 400 years!"
+			]
+		},
+		{
+			"tag": "capitals",
+			"patterns": [
+			  "What’s the capital of Japan?",
+			  "Which city is the capital of Brazil?",
+			  "Name Australia’s capital",
+			  "What’s the capital city of Canada?",
+			  "Where is the capital of Egypt?"
+			],
+			"responses": [
+			  "Tokyo is the capital of Japan.",
+			  "Brasília is the capital of Brazil.",
+			  "Canberra is Australia’s capital.",
+			  "Ottawa is the capital of Canada.",
+			  "Cairo is the capital of Egypt."
+			]
+		},
+		{
+			"tag": "inventions",
+			"patterns": [
+			  "Who created the first airplane?",
+			  "What year was the telephone invented?",
+			  "Who discovered electricity?",
+			  "Who invented the World Wide Web?"
+			],
+			"responses": [
+			  "The Wright brothers invented the first successful airplane.",
+			  "Alexander Graham Bell patented the telephone in 1876.",
+			  "Benjamin Franklin famously studied electricity.",
+			  "Tim Berners-Lee invented the World Wide Web."
+			]
+		},
+		{
+			"tag": "sports",
+			"patterns": [
+				"Who won the last FIFA World Cup?",
+				"Tell me about cricket",
+				"Who is the fastest runner?",
+				"Which country has the most Olympic gold medals?"
+			],
+			"responses": [
+				"The last FIFA World Cup was won by Argentina in 2022.",
+				"Cricket is a bat-and-ball game played between two teams of eleven players.",
+				"Usain Bolt is the fastest runner, holding the 100m world record.",
+				"The USA has the most Olympic gold medals."
+			]
+		},
+		{
+			"tag": "technology",
+			"patterns": [
+				"What is AI?",
+				"Explain machine learning",
+				"What is blockchain?",
+				"Tell me about quantum computing"
+			],
+			"responses": [
+				"AI stands for Artificial Intelligence, which enables machines to mimic human intelligence.",
+				"Machine learning is a subset of AI that allows systems to learn from data and improve over time.",
+				"Blockchain is a decentralized ledger technology used for secure and transparent transactions.",
+				"Quantum computing uses quantum mechanics to perform computations much faster than classical computers."
+			]
+		},
+		{
+			"tag": "movies",
+			"patterns": [
+				"Recommend a good movie",
+				"What's the highest-grossing film?",
+				"Tell me about Marvel movies",
+				"Who directed Inception?"
+			],
+			"responses": [
+				"You should watch 'The Shawshank Redemption'—a classic!",
+				"The highest-grossing film is 'Avatar' by James Cameron.",
+				"Marvel movies are part of the Marvel Cinematic Universe, featuring superheroes like Iron Man and Thor.",
+				"Inception was directed by Christopher Nolan."
+			]
+		},
+		{
+			"tag": "history",
+			"patterns": [
+				"When was World War II?",
+				"Who was the first president of the USA?",
+				"Tell me about the French Revolution",
+				"When did humans land on the moon?"
+			],
+			"responses": [
+				"World War II lasted from 1939 to 1945.",
+				"George Washington was the first president of the USA.",
+				"The French Revolution began in 1789 and led to significant political and social changes in France.",
+				"Humans first landed on the moon on July 20, 1969, during the Apollo 11 mission."
+			]
+		},
+		{
+			"tag": "food",
+			"patterns": [
+				"What's your favorite food?",
+				"Recommend a dish",
+				"Tell me about Italian cuisine",
+				"What are some healthy snacks?"
+			],
+			"responses": [
+				"I don't eat, but I can suggest recipes!",
+				"You should try sushi or pasta—they're delicious!",
+				"Italian cuisine includes pizza, pasta, and gelato.",
+				"Healthy snacks include fruits, nuts, and yogurt."
+			]
+		},
+		{
+			"tag": "movies",
+			"patterns": [
+				"Recommend a good movie",
+				"What's the highest-grossing film?",
+				"Tell me about Marvel movies",
+				"Who directed Inception?",
+				"What are some must-watch movies?",
+				"Can you suggest a movie for the weekend?",
+				"Which movie won the last Oscar for Best Picture?",
+				"Tell me about Christopher Nolan's movies"
+			],
+			"responses": [
+				"You should watch 'The Shawshank Redemption'—a classic!",
+				"The highest-grossing film is 'Avatar' by James Cameron.",
+				"Marvel movies are part of the Marvel Cinematic Universe, featuring superheroes like Iron Man and Thor.",
+				"Inception was directed by Christopher Nolan."
+			]
+		},
+		{
+			"tag": "health",
+			"patterns": [
+				"How to stay healthy?",
+				"Tips for mental health",
+				"Best exercises for fitness",
+				"How much water should I drink daily?",
+				"What are some healthy eating habits?",
+				"How to improve my sleep quality?",
+				"Can you suggest some stress-relief techniques?",
+				"What are the benefits of yoga?"
+			],
+			"responses": [
+				"Eat a balanced diet, exercise regularly, and get enough sleep to stay healthy.",
+				"Practice mindfulness, stay connected with loved ones, and take breaks to improve mental health.",
+				"Cardio, strength training, and yoga are great for overall fitness.",
+				"Drink at least 8 glasses (2 liters) of water daily for proper hydration."
+			]
+		},
+		{
+			"tag": "music",
+			"patterns": [
+				"What's your favorite song?",
+				"Recommend a good playlist",
+				"Tell me about pop music",
+				"Who is the best-selling artist?"
+			],
+			"responses": [
+				"I don't listen to music, but I can suggest some!",
+				"You should check out Spotify's 'Today's Top Hits' playlist.",
+				"Pop music is a genre that includes catchy melodies and mainstream appeal.",
+				"The best-selling artist of all time is The Beatles."
+			]
+		},
+		{
+			"tag": "travel",
+			"patterns": [
+				"Where should I travel next?",
+				"Best travel destinations",
+				"Tell me about Paris",
+				"What are some tips for solo travel?"
+			],
+			"responses": [
+				"You should consider visiting Japan, Italy, or New Zealand!",
+				"Paris is known for its art, fashion, and culture.",
+				"Traveling solo can be rewarding—just stay safe and plan ahead."
+			]
+		},
+		{
+			"tag": "space",
+			"patterns": [
+				"Tell me about black holes",
+				"What is a supernova?",
+				"How many planets are in the solar system?",
+				"Who was the first person in space?",
+				"What is the Milky Way?",
+				"Explain the Big Bang theory"
+			],
+			"responses": [
+				"Black holes are regions of space where gravity is so strong that nothing, not even light, can escape.",
+				"A supernova is a powerful explosion that occurs when a star reaches the end of its life.",
+				"There are 8 planets in the solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+				"Yuri Gagarin was the first person in space, in 1961.",
+				"The Milky Way is the galaxy that contains our solar system.",
+				"The Big Bang theory explains the origin of the universe as a massive expansion from a singularity."
+			]
+		},
+		{
+			"tag": "books",
+			"patterns": [
+				"Recommend a good book",
+				"What's the best-selling book of all time?",
+				"Tell me about Harry Potter",
+				"Who wrote The Great Gatsby?",
+				"Suggest a book for self-improvement",
+				"What are some classic novels?"
+			],
+			"responses": [
+				"You should read 'To Kill a Mockingbird' by Harper Lee—it's a classic!",
+				"The best-selling book of all time is the Bible, followed by 'Don Quixote' by Miguel de Cervantes.",
+				"The Harry Potter series, written by J.K. Rowling, is a popular fantasy series about a young wizard.",
+				"'The Great Gatsby' was written by F. Scott Fitzgerald.",
+				"For self-improvement, try 'Atomic Habits' by James Clear.",
+				"Classic novels include 'Pride and Prejudice,' '1984,' and 'Moby-Dick.'"
+			]
+		},
+		{
+			"tag": "technology_trends",
+			"patterns": [
+				"What are the latest tech trends?",
+				"Tell me about 5G",
+				"What is the Internet of Things?",
+				"Explain augmented reality",
+				"What is the future of AI?",
+				"Tell me about self-driving cars"
+			],
+			"responses": [
+				"Some of the latest tech trends include AI, blockchain, 5G, and quantum computing.",
+				"5G is the fifth generation of mobile networks, offering faster speeds and lower latency.",
+				"The Internet of Things (IoT) refers to interconnected devices that communicate and share data.",
+				"Augmented reality (AR) overlays digital content onto the real world using devices like smartphones or AR glasses.",
+				"The future of AI includes advancements in natural language processing, robotics, and personalized applications.",
+				"Self-driving cars use AI and sensors to navigate roads without human intervention."
+			]
+		},
+		{
+			"tag": "fitness",
+			"patterns": [
+				"How to lose weight?",
+				"Best workouts for beginners",
+				"Tell me about strength training",
+				"What is HIIT?",
+				"How to stay motivated to exercise?",
+				"Can you suggest a fitness routine?"
+			],
+			"responses": [
+				"To lose weight, focus on a calorie deficit, regular exercise, and a balanced diet.",
+				"Beginner workouts include walking, bodyweight exercises, and light yoga.",
+				"Strength training involves lifting weights to build muscle and improve overall fitness.",
+				"HIIT stands for High-Intensity Interval Training, which alternates short bursts of intense exercise with rest periods.",
+				"To stay motivated, set realistic goals, track your progress, and find a workout buddy.",
+				"A balanced fitness routine includes cardio, strength training, and flexibility exercises."
+			]
+		},
+		{
+			"tag": "career",
+			"patterns": [
+				"How to write a resume?",
+				"Tips for job interviews",
+				"How to choose a career?",
+				"Tell me about freelancing",
+				"What are the highest-paying jobs?",
+				"How to improve my skills?"
+			],
+			"responses": [
+				"To write a resume, highlight your skills, experience, and achievements in a clear format.",
+				"For job interviews, research the company, practice common questions, and dress professionally.",
+				"Choose a career based on your interests, skills, and market demand.",
+				"Freelancing allows you to work independently on projects for clients, offering flexibility and variety.",
+				"Some of the highest-paying jobs include software engineering, medicine, and data science.",
+				"Improve your skills by taking online courses, attending workshops, and practicing regularly."
+			]
+		},
+		{
+			"tag": "current_events",
+			"patterns": [
+				"What's happening in the world?",
+				"Tell me the latest news",
+				"What's trending right now?",
+				"Any updates on global events?",
+				"What's the latest in politics?",
+				"Tell me about recent technology news"
+			],
+			"responses": [
+				"I'm not connected to live news, but you can check reliable sources like BBC, CNN, or Reuters.",
+				"Stay updated with the latest news on platforms like Google News or Twitter.",
+				"Technology is advancing rapidly—AI, space exploration, and renewable energy are trending topics."
+			]
+		},
+		{
+			"tag": "environment",
+			"patterns": [
+				"Tell me about climate change",
+				"What's global warming?",
+				"How can we save the environment?",
+				"What's the importance of recycling?",
+				"Tell me about renewable energy",
+				"How to reduce carbon footprint?"
+			],
+			"responses": [
+				"Climate change refers to long-term shifts in temperatures and weather patterns, often caused by human activities.",
+				"Global warming is the increase in Earth's average surface temperature due to greenhouse gases.",
+				"To save the environment, reduce waste, conserve energy, and support sustainable practices.",
+				"Recycling helps reduce waste, conserve resources, and protect the environment.",
+				"Renewable energy sources like solar, wind, and hydro are sustainable alternatives to fossil fuels.",
+				"Reduce your carbon footprint by using public transport, eating less meat, and conserving energy."
+			]
+		},
+		{
+			"tag": "economy",
+			"patterns": [
+				"What's inflation?",
+				"Tell me about the stock market",
+				"How does the economy work?",
+				"What's GDP?",
+				"Explain cryptocurrency",
+				"What's the importance of saving money?"
+			],
+			"responses": [
+				"Inflation is the rate at which the general level of prices for goods and services rises over time.",
+				"The stock market is where shares of publicly traded companies are bought and sold.",
+				"The economy is a system of production, distribution, and consumption of goods and services.",
+				"GDP, or Gross Domestic Product, measures the total value of goods and services produced in a country.",
+				"Cryptocurrency is a digital currency secured by cryptography, like Bitcoin and Ethereum.",
+				"Saving money helps you prepare for emergencies, achieve financial goals, and secure your future."
+			]
+		},
+		{
+			"tag": "science",
+			"patterns": [
+				"Tell me about gravity",
+				"What's the theory of relativity?",
+				"Explain photosynthesis",
+				"What's the speed of light?",
+				"Tell me about DNA",
+				"What's the importance of vaccines?"
+			],
+			"responses": [
+				"Gravity is the force that attracts objects toward each other, keeping planets in orbit around the sun.",
+				"The theory of relativity, proposed by Einstein, explains how space and time are interconnected.",
+				"Photosynthesis is the process by which plants convert sunlight into energy, producing oxygen as a byproduct.",
+				"The speed of light is approximately 299,792 kilometers per second (186,282 miles per second).",
+				"DNA, or deoxyribonucleic acid, carries genetic information in living organisms.",
+				"Vaccines help protect against diseases by stimulating the immune system to recognize and fight pathogens."
+			]
+		},
+		{
+			"tag": "culture",
+			"patterns": [
+				"Tell me about world cultures",
+				"What's the importance of traditions?",
+				"Explain cultural diversity",
+				"Tell me about famous festivals",
+				"What's the role of art in culture?",
+				"How does language shape culture?"
+			],
+			"responses": [
+				"World cultures are rich and diverse, shaped by history, geography, and traditions.",
+				"Traditions preserve cultural heritage and strengthen community bonds.",
+				"Cultural diversity promotes understanding, tolerance, and creativity.",
+				"Famous festivals include Diwali in India, Carnival in Brazil, and Oktoberfest in Germany.",
+				"Art reflects and influences culture, expressing values, beliefs, and emotions.",
+				"Language shapes culture by influencing communication, thought, and identity."
+			]
+		},
+		{
+			"tag": "small_talk",
+			"patterns": [
+				"How's it going?",
+				"What's up?",
+				"How have you been?",
+				"What's new?",
+				"How's your day?",
+				"What's happening?",
+				"How are things?"
+			],
+			"responses": [
+				"I'm doing great, thanks for asking! How about you?",
+				"Not much, just here to help you out!",
+				"My day is going well, how's yours?",
+				"Everything's good on my end. What can I do for you?"
+			]
+		},
+		{
+			"tag": "compliments",
+			"patterns": [
+				"You're amazing",
+				"You're so helpful",
+				"You're the best",
+				"Thanks for being awesome",
+				"I appreciate you"
+			],
+			"responses": [
+				"Thank you! 😊 I'm here to help!",
+				"You're too kind! Let me know if there's anything else I can do.",
+				"That means a lot! I'm glad I could assist you.",
+				"You're awesome too! Thanks for the kind words."
+			]
+		},
+		{
+			"tag": "apologies",
+			"patterns": [
+				"Sorry",
+				"My bad",
+				"I didn't mean to",
+				"Apologies",
+				"Forgive me"
+			],
+			"responses": [
+				"No worries at all!",
+				"It's okay, we all make mistakes.",
+				"Don't worry about it, I'm here to help.",
+				"All good! Let me know how I can assist you."
+			]
+		},
+		{
+			"tag": "acknowledgment",
+			"patterns": [
+				"Got it",
+				"Okay",
+				"Cool",
+				"Sounds good",
+				"Alright",
+				"Understood"
+			],
+			"responses": [
+				"Great! Let me know if you need anything else.",
+				"Awesome! I'm here if you have more questions.",
+				"Cool! Feel free to ask me anything.",
+				"Alright! Let me know how I can assist further."
+			]
+		},
+		{
+			"tag": "expressions",
+			"patterns": [
+				"Wow",
+				"That's amazing",
+				"Unbelievable",
+				"Really?",
+				"No way",
+				"That's cool"
+			],
+			"responses": [
+				"Right? It's fascinating!",
+				"Glad you think so!",
+				"Yes, really! Let me know if you'd like to know more.",
+				"Cool, isn't it? Let me know if you have more questions."
+			]
+		},
+		{
+			"tag": "emotions",
+			"patterns": [
+				"I'm happy",
+				"I'm sad",
+				"I'm excited",
+				"I'm bored",
+				"I'm tired",
+				"I'm frustrated"
+			],
+			"responses": [
+				"That's great to hear! 😊",
+				"I'm sorry to hear that. Is there anything I can do to help?",
+				"Exciting times! Let me know how I can assist.",
+				"Feeling bored? I can share some fun facts or jokes!",
+				"Take a break and rest up. Let me know if you need anything.",
+				"Frustration happens—I'm here to help if I can!"
+			]
+		},
+		{
+			"tag": "world_facts",
+			"patterns": [
+				"Tell me about world capitals",
+				"Which is the largest ocean?",
+				"Name the tallest mountain",
+				"What's the smallest country?",
+				"Tell me about famous landmarks",
+				"Which country has the most languages?"
+			],
+			"responses": [
+				"The capital of France is Paris.",
+				"The Pacific Ocean is the largest ocean.",
+				"Mount Everest is the tallest mountain in the world.",
+				"The Vatican City is the smallest country.",
+				"The Eiffel Tower in Paris is one of the most famous landmarks.",
+				"Papua New Guinea has the most languages spoken."
+			]
+		},
+		{
+			"tag": "science_facts",
+			"patterns": [
+				"Tell me about gravity",
+				"Explain photosynthesis",
+				"What's the speed of light?",
+				"Tell me about DNA",
+				"Explain the Big Bang theory",
+				"What's the importance of vaccines?"
+			],
+			"responses": [
+				"Gravity is the force that attracts objects toward each other.",
+				"Photosynthesis is the process by which plants convert sunlight into energy.",
+				"The speed of light is approximately 299,792 kilometers per second.",
+				"DNA carries genetic information in living organisms.",
+				"The Big Bang theory explains the origin of the universe.",
+				"Vaccines help protect against diseases by stimulating the immune system."
+			]
+		},
+		{
+			"tag": "programming_basics",
+			"patterns": [
+				"What is Python?",
+				"Explain JavaScript",
+				"Tell me about HTML and CSS",
+				"What is an algorithm?",
+				"Explain data structures",
+				"What's machine learning?"
+			],
+			"responses": [
+				"Python is a versatile programming language used for web development, data analysis, and more.",
+				"JavaScript is a scripting language used to create dynamic web pages.",
+				"HTML is used to structure web content, and CSS is used to style it.",
+				"An algorithm is a step-by-step procedure to solve a problem.",
+				"Data structures are ways to organize and store data efficiently.",
+				"Machine learning is a subset of AI that enables systems to learn from data."
+			]
+		},
+		{
+			"tag": "travel_tips",
+			"patterns": [
+				"Where should I travel next?",
+				"Tell me about famous museums",
+				"What's the best way to pack for a trip?",
+				"Suggest some adventure sports",
+				"How to stay safe while traveling?",
+				"Tell me about local cuisines"
+			],
+			"responses": [
+				"Consider visiting Japan, Italy, or New Zealand for your next trip.",
+				"The Louvre in Paris and the British Museum in London are must-visit museums.",
+				"Roll your clothes to save space and pack essentials in your carry-on.",
+				"Adventure sports include skydiving, scuba diving, and bungee jumping.",
+				"Stay safe by keeping your valuables secure and being aware of your surroundings.",
+				"Local cuisines like sushi in Japan or pasta in Italy are worth trying!"
+			]
+		},
+		{
+			"tag": "health_tips",
+			"patterns": [
+				"How to stay healthy?",
+				"Tips for mental health",
+				"What's a balanced diet?",
+				"How to improve sleep quality?",
+				"Tell me about yoga",
+				"How to reduce stress?"
+			],
+			"responses": [
+				"Eat a balanced diet, exercise regularly, and get enough sleep to stay healthy.",
+				"Practice mindfulness, stay connected with loved ones, and take breaks to improve mental health.",
+				"A balanced diet includes fruits, vegetables, proteins, and whole grains.",
+				"To improve sleep, maintain a consistent schedule and avoid screens before bed.",
+				"Yoga combines physical postures, breathing exercises, and meditation for overall well-being.",
+				"Reduce stress by practicing deep breathing, exercising, and taking time for hobbies."
+			]
+		},
+		{
+			"tag": "fun_and_games",
+			"patterns": [
+				"Tell me a joke",
+				"Share a fun fact",
+				"Do you know any riddles?",
+				"What's a good trivia question?",
+				"Can you tell me a tongue twister?",
+				"Play a 'would you rather' game"
+			],
+			"responses": [
+				"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+				"Did you know? Honey never spoils—it can last for thousands of years!",
+				"Here's a riddle: What has keys but can't open locks? (Answer: A piano!)",
+				"Trivia: What is the smallest planet in our solar system? (Answer: Mercury)",
+				"Try this tongue twister: 'She sells seashells by the seashore.'",
+				"Would you rather have the ability to fly or be invisible?"
+			]
+		},
+		{
+			"tag": "motivation",
+			"patterns": [
+				"Share a motivational quote",
+				"Tell me something inspiring",
+				"How to stay motivated?",
+				"Give me a daily affirmation",
+				"How to achieve my goals?",
+				"Tell me about time management"
+			],
+			"responses": [
+				"Motivational quote: 'The only way to do great work is to love what you do.' - Steve Jobs",
+				"Believe in yourself—you are capable of amazing things!",
+				"Stay motivated by setting clear goals and celebrating small wins.",
+				"Daily affirmation: 'I am capable, confident, and ready to succeed.'",
+				"To achieve your goals, break them into smaller steps and stay consistent.",
+				"Time management tip: Prioritize tasks and avoid multitasking to stay focused."
+			]
+		},
+		{
+			"tag": "world_records",
+			"patterns": [
+				"What's the tallest building in the world?",
+				"Which is the fastest car?",
+				"Tell me about the longest river",
+				"What's the largest animal?",
+				"Which is the smallest bird?"
+			],
+			"responses": [
+				"The Burj Khalifa in Dubai is the tallest building in the world.",
+				"The Bugatti Chiron Super Sport 300+ is one of the fastest cars.",
+				"The Nile River is the longest river in the world.",
+				"The blue whale is the largest animal.",
+				"The bee hummingbird is the smallest bird."
+			]
+		},
+		{
+			"tag": "nobel_prizes",
+			"patterns": [
+				"Who won the Nobel Prize in Physics?",
+				"Tell me about Nobel Peace Prize winners",
+				"Who was the first Nobel Prize winner?",
+				"Explain the Nobel Prize categories",
+				"What's the history of the Nobel Prize?"
+			],
+			"responses": [
+				"The Nobel Prize in Physics is awarded for outstanding contributions to the field.",
+				"Malala Yousafzai is a notable Nobel Peace Prize winner.",
+				"Wilhelm Röntgen was the first Nobel Prize winner in Physics.",
+				"The Nobel Prizes are awarded in Physics, Chemistry, Medicine, Literature, Peace, and Economic Sciences.",
+				"The Nobel Prizes were established by Alfred Nobel's will in 1895."
+			]
+		},
+		{
+			"tag": "time_zones",
+			"patterns": [
+				"What's the time difference between New York and London?",
+				"Explain time zones",
+				"How many time zones are there?",
+				"What's GMT?",
+				"Tell me about daylight saving time"
+			],
+			"responses": [
+				"New York is usually 5 hours behind London.",
+				"Time zones are regions of the Earth with the same standard time.",
+				"There are 24 time zones globally.",
+				"GMT stands for Greenwich Mean Time, the baseline for time zones.",
+				"Daylight saving time adjusts clocks forward in spring and back in autumn."
+			]
+		},
+		{
+			"tag": "famous_personalities",
+			"patterns": [
+				"Tell me about Albert Einstein",
+				"Who is Elon Musk?",
+				"Explain Mahatma Gandhi's role in history",
+				"Who is the richest person in the world?",
+				"Tell me about Marie Curie"
+			],
+			"responses": [
+				"Albert Einstein was a physicist known for the theory of relativity.",
+				"Elon Musk is the CEO of Tesla and SpaceX.",
+				"Mahatma Gandhi led India's non-violent independence movement.",
+				"The richest person in the world varies; check the latest Forbes list.",
+				"Marie Curie was a scientist who discovered radioactivity and won two Nobel Prizes."
+			]
+		},
+		{
+			"tag": "geography_facts",
+			"patterns": [
+				"What's the largest desert?",
+				"Tell me about the Amazon rainforest",
+				"Which is the longest river?",
+				"What's the highest waterfall?",
+				"Explain the Great Barrier Reef"
+			],
+			"responses": [
+				"The Sahara Desert is the largest hot desert in the world.",
+				"The Amazon rainforest is the largest tropical rainforest, located in South America.",
+				"The Nile River is the longest river in the world.",
+				"Angel Falls in Venezuela is the highest waterfall.",
+				"The Great Barrier Reef is the world's largest coral reef system, located in Australia."
+			]
+		},
+		{
+			"tag": "currencies",
+			"patterns": [
+				"What's the currency of Japan?",
+				"Tell me about the US dollar",
+				"Which countries use the Euro?",
+				"What's the currency of India?",
+				"Explain cryptocurrency"
+			],
+			"responses": [
+				"The currency of Japan is the Yen.",
+				"The US dollar is the official currency of the United States.",
+				"The Euro is used by 19 countries in the European Union.",
+				"The currency of India is the Indian Rupee.",
+				"Cryptocurrency is a digital currency secured by cryptography, like Bitcoin and Ethereum."
+			]
+
+		},
+		{
+			"tag": "space_exploration",
+			"patterns": [
+				"Who was the first person in space?",
+				"Tell me about the moon landing",
+				"What is the International Space Station?",
+				"Explain Mars exploration",
+				"Tell me about space tourism"
+			],
+			"responses": [
+				"Yuri Gagarin was the first person in space, in 1961.",
+				"The first moon landing was by Apollo 11 in 1969, with Neil Armstrong and Buzz Aldrin.",
+				"The International Space Station (ISS) is a habitable space station orbiting Earth.",
+				"Mars exploration involves rovers like Perseverance and missions to study the planet's surface.",
+				"Space tourism allows civilians to travel to space, with companies like SpaceX and Blue Origin leading the way."
+			]
+		},
+		{
+			"tag": "climate_change",
+			"patterns": [
+				"What is climate change?",
+				"Explain global warming",
+				"How can we stop climate change?",
+				"Tell me about renewable energy",
+				"What are greenhouse gases?"
+			],
+			"responses": [
+				"Climate change refers to long-term changes in temperature and weather patterns.",
+				"Global warming is the increase in Earth's average temperature due to greenhouse gases.",
+				"To combat climate change, reduce emissions, use renewable energy, and conserve resources.",
+				"Renewable energy includes solar, wind, and hydroelectric power.",
+				"Greenhouse gases, like CO2 and methane, trap heat in the atmosphere, causing global warming."
+			]
+		},
+		{
+			"tag": "artificial_intelligence",
+			"patterns": [
+				"What is AI?",
+				"Explain machine learning",
+				"Tell me about deep learning",
+				"What are neural networks?",
+				"How does AI work?"
+			],
+			"responses": [
+				"AI, or Artificial Intelligence, enables machines to mimic human intelligence.",
+				"Machine learning is a subset of AI where systems learn from data to improve performance.",
+				"Deep learning uses neural networks to process large amounts of data for tasks like image recognition.",
+				"Neural networks are algorithms inspired by the human brain, used in AI and machine learning.",
+				"AI works by processing data, identifying patterns, and making decisions based on algorithms."
+			]
+		},
+		{
+			"tag": "cybersecurity",
+			"patterns": [
+				"What is cybersecurity?",
+				"How to stay safe online?",
+				"Explain phishing attacks",
+				"Tell me about firewalls",
+				"What is encryption?"
+			],
+			"responses": [
+				"Cybersecurity involves protecting systems and data from cyber threats.",
+				"Stay safe online by using strong passwords, avoiding suspicious links, and enabling two-factor authentication.",
+				"Phishing attacks trick users into revealing sensitive information through fake emails or websites.",
+				"Firewalls are security systems that monitor and control incoming and outgoing network traffic.",
+				"Encryption secures data by converting it into a code that can only be accessed with a key."
+			]
+		},
+		{
+			"tag": "education",
+			"patterns": [
+				"How to prepare for exams?",
+				"Give me study tips",
+				"Tell me about online courses",
+				"How to stay focused while studying?",
+				"What are the best learning platforms?"
+			],
+			"responses": [
+				"Prepare for exams by creating a study schedule, reviewing notes, and practicing past papers.",
+				"Study tips: Take breaks, use flashcards, and stay organized.",
+				"Online courses are available on platforms like Coursera, Udemy, and Khan Academy.",
+				"Stay focused by eliminating distractions, setting goals, and using the Pomodoro technique.",
+				"Top learning platforms include edX, LinkedIn Learning, and freeCodeCamp."
+			]
+		},
+		{
+			"tag": "fitness_and_health",
+			"patterns": [
+				"How to lose weight?",
+				"Tell me about yoga",
+				"How to build muscle?",
+				"Give me tips for mental health",
+				"What are the benefits of meditation?"
+			],
+			"responses": [
+				"To lose weight, focus on a balanced diet and regular exercise.",
+				"Yoga improves flexibility, strength, and mental clarity.",
+				"Build muscle by incorporating strength training and consuming enough protein.",
+				"Mental health tips: Practice mindfulness, stay connected with loved ones, and get enough sleep.",
+				"Meditation reduces stress, improves focus, and promotes emotional well-being."
+			]
+		},
+		{
+			"tag": "travel_and_tourism",
+			"patterns": [
+				"Where should I travel next?",
+				"Tell me about famous landmarks",
+				"How to plan a trip?",
+				"Give me travel safety tips",
+				"What are the best travel destinations?"
+			],
+			"responses": [
+				"Consider visiting Japan, Italy, or New Zealand for your next trip.",
+				"Famous landmarks include the Eiffel Tower, Great Wall of China, and Taj Mahal.",
+				"Plan a trip by setting a budget, booking accommodations, and creating an itinerary.",
+				"Travel safety tips: Keep your valuables secure, stay aware of your surroundings, and have travel insurance.",
+				"Top travel destinations include Paris, Bali, and Kyoto."
+			]
+		},
+		{
+			"tag": "fun_and_entertainment",
+			"patterns": [
+				"Tell me a joke",
+				"Share a fun fact",
+				"Do you know any riddles?",
+				"What's a good trivia question?",
+				"Can you tell me a tongue twister?"
+			],
+			"responses": [
+				"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+				"Fun fact: Honey never spoils—it can last for thousands of years!",
+				"Here's a riddle: What has keys but can't open locks? (Answer: A piano!)",
+				"Trivia: What is the smallest planet in our solar system? (Answer: Mercury)",
+				"Try this tongue twister: 'She sells seashells by the seashore.'"
+			]
+		},
+		{
+			"tag": "mental_health",
+			"patterns": [
+				"How to reduce stress?",
+				"Tell me about mindfulness",
+				"How to improve sleep quality?",
+				"Give me tips for anxiety",
+				"What are the benefits of therapy?"
+			],
+			"responses": [
+				"Reduce stress by practicing deep breathing, exercising, and taking breaks.",
+				"Mindfulness involves being present in the moment and accepting it without judgment.",
+				"Improve sleep quality by maintaining a consistent schedule and avoiding screens before bed.",
+				"Anxiety tips: Practice relaxation techniques, stay active, and talk to someone you trust.",
+				"Therapy provides a safe space to explore your feelings and develop coping strategies."
+			]
+		},
+		{
+			"tag": "technology_trends",
+			"patterns": [
+				"What are the latest tech trends?",
+				"Tell me about 5G",
+				"Explain blockchain",
+				"What is augmented reality?",
+				"Tell me about quantum computing"
+			],
+			"responses": [
+				"Latest tech trends include AI, blockchain, 5G, and quantum computing.",
+				"5G offers faster internet speeds and lower latency.",
+				"Blockchain is a decentralized ledger technology used for secure transactions.",
+				"Augmented reality overlays digital content onto the real world.",
+				"Quantum computing uses quantum mechanics to solve complex problems faster than classical computers."
+			]
+		},
+		{
+			"tag": "emotional_resilience",
+			"patterns": [
+				"How to build emotional resilience?",
+				"Tips for staying strong emotionally",
+				"How to handle tough situations?",
+				"Tell me about emotional strength"
+			],
+			"responses": [
+				"Emotional resilience can be built by practicing self-care, staying positive, and seeking support when needed.",
+				"Focus on your strengths, maintain a growth mindset, and learn from challenges.",
+				"Handling tough situations requires patience, perspective, and sometimes professional help.",
+				"Building emotional strength involves mindfulness, gratitude, and self-compassion."
+			]
+		},
+		{
+			"tag": "positive_psychology",
+			"patterns": [
+				"What is positive psychology?",
+				"How to stay positive?",
+				"Tell me about happiness science",
+				"Explain the benefits of optimism"
+			],
+			"responses": [
+				"Positive psychology focuses on strengths, well-being, and what makes life worth living.",
+				"Staying positive involves gratitude, mindfulness, and surrounding yourself with supportive people.",
+				"Happiness science studies factors that contribute to a fulfilling life.",
+				"Optimism improves mental health, reduces stress, and enhances relationships."
+			]
+		},
+		{
+			"tag": "memory_improvement",
+			"patterns": [
+				"How to improve memory?",
+				"Tips for better recall",
+				"How to remember things easily?",
+				"Tell me about memory techniques"
+			],
+			"responses": [
+				"Improve memory by staying organized, practicing mindfulness, and using mnemonic devices.",
+				"Regular exercise, a healthy diet, and adequate sleep can enhance memory.",
+				"Techniques like visualization, repetition, and association can help with recall.",
+				"Brain exercises like puzzles and learning new skills can boost memory."
+			]
+		},
+		{
+			"tag": "decision_making",
+			"patterns": [
+				"How to make better decisions?",
+				"Tell me about decision-making frameworks",
+				"How to weigh pros and cons?",
+				"Explain critical thinking in decision-making"
+			],
+			"responses": [
+				"Better decisions come from gathering information, evaluating options, and considering long-term impacts.",
+				"Frameworks like SWOT analysis and decision trees can help structure your choices.",
+				"Critical thinking involves analyzing facts, questioning assumptions, and avoiding biases.",
+				"Take your time, seek advice, and trust your instincts when making decisions."
+			]
+		},
+		{
+			"tag": "leadership",
+			"patterns": [
+				"How to be a good leader?",
+				"Tell me about leadership theories",
+				"Explain servant leadership",
+				"How to inspire a team?"
+			],
+			"responses": [
+				"A good leader communicates effectively, listens actively, and leads by example.",
+				"Leadership theories include transformational, transactional, and situational leadership.",
+				"Servant leadership focuses on serving the needs of the team and fostering growth.",
+				"Inspire a team by setting a clear vision, recognizing achievements, and encouraging collaboration."
+			]
+		},
+		{
+			"tag": "project_management",
+			"patterns": [
+				"What is agile methodology?",
+				"Explain the scrum framework",
+				"How to use kanban boards?",
+				"Tell me about project management tools"
+			],
+			"responses": [
+				"Agile methodology emphasizes flexibility, collaboration, and iterative progress.",
+				"The scrum framework organizes work into sprints with defined roles like Scrum Master and Product Owner.",
+				"Kanban boards visualize tasks and workflows to improve efficiency.",
+				"Popular project management tools include Trello, Asana, and Jira."
+			]
+		},
+		{
+			"tag": "user_experience",
+			"patterns": [
+				"What is user experience design?",
+				"Explain UI design",
+				"How to create wireframes?",
+				"Tell me about prototyping tools"
+			],
+			"responses": [
+				"User experience (UX) design focuses on creating products that are easy and enjoyable to use.",
+				"UI design involves designing the visual elements of a product, like buttons and layouts.",
+				"Wireframes are basic sketches of a product's layout, used to plan its structure.",
+				"Prototyping tools like Figma and Adobe XD help create interactive product mockups."
+			]
+		},
+		{
+			"tag": "cybersecurity_awareness",
+			"patterns": [
+				"How to avoid phishing scams?",
+				"Tell me about ransomware",
+				"Explain data privacy",
+				"What is GDPR compliance?",
+				"How to secure my online accounts?"
+			],
+			"responses": [
+				"Avoid phishing scams by verifying email senders and avoiding suspicious links.",
+				"Ransomware is a type of malware that locks your data until a ransom is paid.",
+				"Data privacy involves protecting personal information from unauthorized access.",
+				"GDPR compliance ensures organizations handle personal data responsibly and transparently.",
+				"Secure your online accounts by using strong passwords and enabling two-factor authentication."
+			]
+		},
+		{
+			"tag": "data_science",
+			"patterns": [
+				"What is data visualization?",
+				"Explain predictive analytics",
+				"Tell me about clustering algorithms",
+				"How to use Tableau?",
+				"What is regression analysis?"
+			],
+			"responses": [
+				"Data visualization presents data in graphical formats like charts and graphs for better understanding.",
+				"Predictive analytics uses historical data to forecast future trends.",
+				"Clustering algorithms group similar data points together for analysis.",
+				"Tableau is a data visualization tool that helps create interactive dashboards and reports.",
+				"Regression analysis is a statistical method to determine relationships between variables."
+			]
+		},
+		{
+			"tag": "cloud_computing",
+			"patterns": [
+				"What is cloud computing?",
+				"Explain AWS basics",
+				"Tell me about Google Cloud",
+				"What is SaaS?",
+				"How does Microsoft Azure work?"
+			],
+			"responses": [
+				"Cloud computing delivers computing services like storage and processing over the internet.",
+				"AWS (Amazon Web Services) is a popular cloud platform offering scalable solutions.",
+				"Google Cloud provides cloud services for computing, storage, and machine learning.",
+				"SaaS (Software as a Service) delivers software applications over the internet.",
+				"Microsoft Azure is a cloud platform offering services like virtual machines, databases, and AI tools."
+			]
+		},
+		{
+			"tag": "machine_learning",
+			"patterns": [
+				"What is machine learning?",
+				"Explain supervised learning",
+				"Tell me about neural networks",
+				"What is reinforcement learning?",
+				"How does deep learning work?"
+			],
+			"responses": [
+				"Machine learning is a subset of AI where systems learn from data to improve performance.",
+				"Supervised learning involves training a model on labeled data to make predictions.",
+				"Neural networks are algorithms inspired by the human brain, used in AI and machine learning.",
+				"Reinforcement learning trains models to make decisions by rewarding desired behaviors.",
+				"Deep learning uses neural networks with multiple layers to process complex data."
+			]
+		},
+		{
+			"tag": "personal_finance",
+			"patterns": [
+				"How to save money?",
+				"Tell me about budgeting apps",
+				"Explain retirement planning",
+				"What is a mutual fund?",
+				"How to invest in stocks?"
+			],
+			"responses": [
+				"Save money by tracking expenses, setting goals, and avoiding unnecessary purchases.",
+				"Budgeting apps like Mint and YNAB can help you manage your finances.",
+				"Retirement planning involves saving and investing to ensure financial security in later years.",
+				"A mutual fund pools money from investors to invest in stocks, bonds, or other assets.",
+				"Invest in stocks by researching companies, diversifying your portfolio, and using a brokerage account."
+			]
+		},
+		{
+			"tag": "renewable_energy",
+			"patterns": [
+				"What is solar energy?",
+				"Tell me about wind power",
+				"Explain geothermal energy",
+				"What are tidal energy benefits?",
+				"How does renewable energy help the environment?"
+			],
+			"responses": [
+				"Solar energy is harnessed from sunlight using solar panels.",
+				"Wind power generates electricity using wind turbines.",
+				"Geothermal energy uses heat from the Earth's core to produce electricity.",
+				"Tidal energy is a renewable source generated from ocean tides.",
+				"Renewable energy reduces greenhouse gas emissions and dependence on fossil fuels."
+			]
+		},
+		{
+			"tag": "coding_tips",
+			"patterns": [
+				"How to learn coding?",
+				"Best programming languages for beginners",
+				"Tell me about debugging techniques",
+				"How to write clean code?",
+				"Explain version control systems"
+			],
+			"responses": [
+				"Learn coding by starting with beginner-friendly languages like Python or JavaScript.",
+				"Debugging involves identifying and fixing errors in your code.",
+				"Write clean code by following consistent naming conventions and keeping functions short.",
+				"Version control systems like Git help track changes in your code and collaborate with others.",
+				"Practice coding regularly and build small projects to improve your skills."
+			]
+		},
+		{
+			"tag": "mental_health_practices",
+			"patterns": [
+				"How to practice mindfulness?",
+				"Tell me about gratitude journaling",
+				"Explain the benefits of meditation",
+				"How to reduce anxiety?",
+				"What are some self-care tips?"
+			],
+			"responses": [
+				"Mindfulness involves focusing on the present moment without judgment.",
+				"Gratitude journaling helps you reflect on positive aspects of your life.",
+				"Meditation reduces stress, improves focus, and promotes emotional well-being.",
+				"Reduce anxiety by practicing deep breathing, staying active, and seeking support.",
+				"Self-care tips: Get enough sleep, eat healthily, and take breaks when needed."
+			]
+		},
+		{
+			"tag": "data_analysis",
+			"patterns": [
+				"What is data analysis?",
+				"Explain hypothesis testing",
+				"Tell me about regression analysis",
+				"How to use Power BI?",
+				"What is data storytelling?"
+			],
+			"responses": [
+				"Data analysis involves examining data to extract meaningful insights.",
+				"Hypothesis testing is a statistical method to determine if a hypothesis is true.",
+				"Regression analysis identifies relationships between variables in data.",
+				"Power BI is a tool for creating interactive data visualizations and reports.",
+				"Data storytelling combines data and narrative to communicate insights effectively."
+			]
+		},
+		{
+			"tag": "robotics",
+			"patterns": [
+				"What is robotics?",
+				"Tell me about industrial robots",
+				"Explain autonomous robots",
+				"How do robots work?",
+				"What are the applications of robotics?"
+			],
+			"responses": [
+				"Robotics involves designing, building, and programming robots to perform tasks.",
+				"Industrial robots are used in manufacturing for tasks like assembly and welding.",
+				"Autonomous robots can operate independently using sensors and AI.",
+				"Robots work by combining hardware (motors, sensors) and software (programming).",
+				"Applications of robotics include healthcare, agriculture, and space exploration."
+			]
+		},
+		{
+			"tag": "nutrition",
+			"patterns": [
+				"What is a balanced diet?",
+				"Tell me about vitamins and minerals",
+				"How to stay hydrated?",
+				"What are healthy eating habits?",
+				"Explain the benefits of protein"
+			],
+			"responses": [
+				"A balanced diet includes fruits, vegetables, proteins, and whole grains.",
+				"Vitamins and minerals are essential nutrients that support overall health.",
+				"Stay hydrated by drinking at least 8 glasses of water daily.",
+				"Healthy eating habits include portion control and avoiding processed foods.",
+				"Protein helps build and repair tissues and is essential for muscle growth."
+			]
+		},
+		{
+			"tag": "space_technology",
+			"patterns": [
+				"What is a satellite?",
+				"Tell me about space telescopes",
+				"Explain space probes",
+				"How do rockets work?",
+				"What is space debris?"
+			],
+			"responses": [
+				"Satellites are objects launched into orbit to collect data or enable communication.",
+				"Space telescopes like Hubble observe distant celestial objects.",
+				"Space probes are unmanned spacecraft sent to explore planets and other celestial bodies.",
+				"Rockets work by expelling gas at high speed to generate thrust.",
+				"Space debris refers to defunct satellites and fragments orbiting Earth."
+			]
+		},
+		{
+			"tag": "art_and_design",
+			"patterns": [
+				"What is color theory?",
+				"Tell me about typography",
+				"Explain branding principles",
+				"How to create a logo?",
+				"What are the basics of graphic design?"
+			],
+			"responses": [
+				"Color theory explores how colors interact and the emotions they evoke.",
+				"Typography involves the design and arrangement of text for readability and aesthetics.",
+				"Branding principles include consistency, uniqueness, and emotional connection.",
+				"To create a logo, focus on simplicity, relevance, and scalability.",
+				"Graphic design combines visuals and text to communicate ideas effectively."
+			]
+		},
+		{
+			"tag": "blockchain",
+			"patterns": [
+				"What is blockchain?",
+				"Explain how blockchain works",
+				"Tell me about smart contracts",
+				"What are the uses of blockchain?",
+				"How is blockchain secure?"
+			],
+			"responses": [
+				"Blockchain is a decentralized ledger technology used to record transactions securely.",
+				"Blockchain works by storing data in blocks that are linked together in a chain.",
+				"Smart contracts are self-executing contracts with terms directly written into code.",
+				"Blockchain is used in cryptocurrency, supply chain management, and secure voting systems.",
+				"Blockchain is secure due to its decentralized nature and cryptographic algorithms."
+			]
+		},
+		{
+			"tag": "quantum_computing",
+			"patterns": [
+				"What is quantum computing?",
+				"Explain qubits",
+				"How is quantum computing different from classical computing?",
+				"Tell me about quantum algorithms",
+				"What are the applications of quantum computing?"
+			],
+			"responses": [
+				"Quantum computing uses quantum mechanics to process information in ways classical computers cannot.",
+				"Qubits are the basic units of quantum information, capable of being in multiple states simultaneously.",
+				"Quantum computing can solve complex problems faster than classical computing by leveraging superposition and entanglement.",
+				"Quantum algorithms, like Shor's and Grover's, are designed to solve specific problems efficiently.",
+				"Applications include cryptography, drug discovery, and optimization problems."
+			]
+		},
+		{
+			"tag": "digital_marketing",
+			"patterns": [
+				"What is digital marketing?",
+				"Explain SEO",
+				"Tell me about social media marketing",
+				"How does email marketing work?",
+				"What are PPC ads?"
+			],
+			"responses": [
+				"Digital marketing involves promoting products or services through digital channels like social media and search engines.",
+				"SEO (Search Engine Optimization) improves a website's visibility on search engines.",
+				"Social media marketing uses platforms like Facebook and Instagram to engage with audiences.",
+				"Email marketing involves sending targeted emails to promote products or build customer relationships.",
+				"PPC (Pay-Per-Click) ads are online advertisements where advertisers pay each time their ad is clicked."
+			]
+		},
+		{
+			"tag": "game_development",
+			"patterns": [
+				"How are video games made?",
+				"Tell me about game engines",
+				"Explain Unity",
+				"What is Unreal Engine?",
+				"How to design game levels?"
+			],
+			"responses": [
+				"Video games are made using game engines, programming, and creative design.",
+				"Game engines like Unity and Unreal Engine provide tools for creating games.",
+				"Unity is a popular game engine used for 2D and 3D game development.",
+				"Unreal Engine is known for its high-quality graphics and is used in AAA games.",
+				"Game level design involves creating environments, challenges, and objectives for players."
+				 ]
+		},
+		{
+			"tag": "self_improvement",
+			"patterns": [
+				"How to improve myself?",
+				"Tell me about personal development",
+				"How to set goals?",
+				"What are some good habits?",
+				"Explain time management"
+			],
+			"responses": [
+				"Self-improvement involves setting goals, learning new skills, and reflecting on progress.",
+				"Personal development focuses on improving skills, mindset, and overall well-being.",
+				"Set goals using the SMART framework: Specific, Measurable, Achievable, Relevant, and Time-bound.",
+				"Good habits include reading, exercising, and practicing gratitude.",
+				"Time management involves prioritizing tasks, avoiding procrastination, and staying organized."
+			]
+		},
+		{
+			"tag": "world_history",
+			"patterns": [
+				"Tell me about the Roman Empire",
+				"Explain the Industrial Revolution",
+				"What caused World War I?",
+				"Who was Napoleon Bonaparte?",
+				"Tell me about the Cold War"
+			],
+			"responses": [
+				"The Roman Empire was one of the most powerful civilizations, lasting from 27 BC to 476 AD.",
+				"The Industrial Revolution was a period of technological and industrial advancements in the 18th and 19th centuries.",
+				"World War I was caused by a combination of militarism, alliances, imperialism, and nationalism.",
+				"Napoleon Bonaparte was a French military leader who became Emperor of France in the early 19th century.",
+				"The Cold War was a period of political tension between the USA and the Soviet Union after World War II."
+			]
+		},
+		{
+			"tag": "famous_landmarks",
+			"patterns": [
+				"Tell me about the Eiffel Tower",
+				"What is the Great Wall of China?",
+				"Where is the Taj Mahal?",
+				"Explain the significance of the Statue of Liberty",
+				"Tell me about Machu Picchu"
+			],
+			"responses": [
+				"The Eiffel Tower is a famous landmark in Paris, France, built in 1889.",
+				"The Great Wall of China is a series of fortifications built to protect China from invasions.",
+				"The Taj Mahal is a mausoleum in India, built by Emperor Shah Jahan in memory of his wife.",
+				"The Statue of Liberty is a symbol of freedom and democracy, located in New York City.",
+				"Machu Picchu is an ancient Incan city in Peru, known for its stunning architecture and history."
+			]
+		},
+		{
+			"tag": "festivals",
+			"patterns": [
+				"Tell me about Diwali",
+				"What is Christmas?",
+				"Explain the significance of Eid",
+				"Where is Carnival celebrated?",
+				"Tell me about the Chinese New Year"
+			],
+			"responses": [
+				"Diwali, the Festival of Lights, is celebrated in India to mark the victory of light over darkness.",
+				"Christmas is celebrated on December 25th to commemorate the birth of Jesus Christ.",
+				"Eid is a Muslim festival that marks the end of Ramadan, a month of fasting.",
+				"Carnival is celebrated in Brazil with parades, music, and dancing.",
+				"The Chinese New Year marks the beginning of the lunar calendar and is celebrated with family gatherings and traditions."
+			]
+		},
+		{
+			"tag": "sports_facts",
+			"patterns": [
+				"Who has the most Olympic gold medals?",
+				"Tell me about the FIFA World Cup",
+				"Who is the greatest basketball player?",
+				"What is the history of cricket?",
+				"Explain the rules of tennis"
+			],
+			"responses": [
+				"Michael Phelps holds the record for the most Olympic gold medals, with 23.",
+				"The FIFA World Cup is an international football tournament held every four years.",
+				"Many consider Michael Jordan to be the greatest basketball player of all time.",
+				"Cricket originated in England and is now played worldwide, especially in countries like India and Australia.",
+				"Tennis is played between two players (singles) or two teams (doubles) with the objective of scoring points by hitting the ball into the opponent's court."
+			]
+		},
+		{
+			"tag": "food_and_cuisine",
+			"patterns": [
+				"Tell me about Italian food",
+				"What is sushi?",
+				"Explain the Mediterranean diet",
+				"How to make a healthy smoothie?",
+				"Tell me about street food in Thailand"
+			],
+			"responses": [
+				"Italian food includes dishes like pasta, pizza, and risotto, known for their rich flavors.",
+				"Sushi is a Japanese dish made with vinegared rice, raw fish, and vegetables.",
+				"The Mediterranean diet emphasizes fruits, vegetables, whole grains, and healthy fats like olive oil.",
+				"A healthy smoothie can be made with fruits, yogurt, and a handful of spinach or kale.",
+				"Street food in Thailand includes dishes like pad thai, mango sticky rice, and spicy papaya salad."
+			]
+		},
+		{
+			"tag": "travel_destinations",
+			"patterns": [
+				"Where should I visit in Europe?",
+				"Tell me about the Maldives",
+				"What are the best places to visit in Japan?",
+				"Explain the beauty of the Grand Canyon",
+				"Tell me about African safaris"
+			],
+			"responses": [
+				"In Europe, visit cities like Paris, Rome, and Amsterdam for their history and culture.",
+				"The Maldives is known for its crystal-clear waters, white sandy beaches, and luxury resorts.",
+				"Top places to visit in Japan include Tokyo, Kyoto, and Mount Fuji.",
+				"The Grand Canyon in the USA is a natural wonder known for its breathtaking views and hiking trails.",
+				"African safaris offer a chance to see wildlife like lions, elephants, and giraffes in their natural habitat."
+			]
+		},
+		{
+			"tag": "mythology",
+			"patterns": [
+				"Tell me about Greek mythology",
+				"Who is Zeus?",
+				"Explain Norse mythology",
+				"Who is Thor?",
+				"Tell me about Egyptian gods"
+			],
+			"responses": [
+				"Greek mythology includes stories of gods like Zeus, Hera, and Poseidon, and heroes like Hercules.",
+				"Zeus is the king of the gods in Greek mythology, ruling over Mount Olympus.",
+				"Norse mythology includes gods like Odin, Thor, and Loki, and tales of Valhalla and Ragnarok.",
+				"Thor is the Norse god of thunder, known for his hammer, Mjolnir.",
+				"Egyptian mythology includes gods like Ra, Anubis, and Isis, who played roles in creation and the afterlife."
+			]
+		},
+		{
+			"tag": "philosophy",
+			"patterns": [
+				"Who was Socrates?",
+				"Tell me about stoicism",
+				"Explain existentialism",
+				"What is metaphysics?",
+				"Who are famous philosophers?"
+			],
+			"responses": [
+				"Socrates was a Greek philosopher known for his method of questioning to seek truth and knowledge.",
+				"Stoicism is a philosophy that emphasizes self-control, resilience, and focusing on what you can control.",
+				"Existentialism explores the meaning of existence and individual freedom.",
+				"Metaphysics is a branch of philosophy that studies the nature of reality and existence.",
+				"Famous philosophers include Plato, Aristotle, Immanuel Kant, and Friedrich Nietzsche."
+			]
+		},
+		{
+			"tag": "languages",
+			"patterns": [
+				"How many languages are there in the world?",
+				"Tell me about the French language",
+				"Explain the importance of learning languages",
+				"What is the most spoken language?",
+				"How to learn a new language?"
+			],
+			"responses": [
+				"There are over 7,000 languages spoken in the world today.",
+				"French is a Romance language spoken in France, Canada, and many African countries.",
+				"Learning languages improves communication skills, cultural understanding, and cognitive abilities.",
+				"The most spoken language in the world is English, followed by Mandarin Chinese.",
+				"To learn a new language, practice regularly, use apps like Duolingo, and immerse yourself in the culture."
+			]
+		},
+		{
+			"tag": "art_and_culture",
+			"patterns": [
+				"Tell me about famous painters",
+				"What is the Mona Lisa?",
+				"Explain the importance of art",
+				"Who is Pablo Picasso?",
+				"Tell me about modern art"
+			],
+			"responses": [
+				"Famous painters include Leonardo da Vinci, Vincent van Gogh, and Claude Monet.",
+				"The Mona Lisa is a famous painting by Leonardo da Vinci, known for its mysterious smile.",
+				"Art is important for expressing emotions, preserving culture, and inspiring creativity.",
+				"Pablo Picasso was a Spanish painter and sculptor, known for co-founding the Cubist movement.",
+				"Modern art includes styles like abstract, surrealism, and pop art, focusing on innovation and experimentation."
+			]
+		},
+				{
+					"tag": "niet_general_info",
+					"patterns": [
+						"Tell me about NIET",
+						"What is NIET?",
+						"Where is NIET located?",
+						"Give me an overview of NIET",
+						"Is NIET a good college?"
+					],
+					"responses": [
+						"NIET stands for Noida Institute of Engineering and Technology, located in Greater Noida, Uttar Pradesh.",
+						"NIET is one of the top private engineering colleges in India, known for its academic excellence and placement opportunities.",
+						"The college is located in Knowledge Park II, Greater Noida.",
+						"NIET offers undergraduate, postgraduate, and diploma programs in engineering, management, and pharmacy."
+					]
+				},
+				{
+					"tag": "niet_courses",
+					"patterns": [
+						"What courses does NIET offer?",
+						"Tell me about the programs at NIET",
+						"Does NIET have MBA programs?",
+						"Can I study pharmacy at NIET?",
+						"What engineering branches are available at NIET?"
+					],
+					"responses": [
+						"NIET offers courses in engineering, management, pharmacy, and computer applications.",
+						"Engineering branches include Computer Science, Mechanical, Civil, Electronics, and more.",
+						"Yes, NIET offers MBA programs with specializations in various fields.",
+						"The pharmacy department at NIET is highly reputed and offers both undergraduate and postgraduate programs."
+					]
+				},
+				{
+					"tag": "niet_facilities",
+					"patterns": [
+						"What facilities are available at NIET?",
+						"Tell me about the campus of NIET",
+						"Does NIET have a library?",
+						"Are there hostels at NIET?",
+						"Does NIET have sports facilities?"
+					],
+					"responses": [
+						"NIET has state-of-the-art facilities, including modern classrooms, labs, and a well-stocked library.",
+						"The campus includes hostels for both boys and girls with all necessary amenities.",
+						"Sports facilities at NIET include grounds for cricket, football, basketball, and indoor games.",
+						"The college also has a cafeteria, medical facilities, and transportation services."
+					]
+				},
+				{
+					"tag": "niet_placements",
+					"patterns": [
+						"How are the placements at NIET?",
+						"Tell me about NIET's placement record",
+						"Which companies visit NIET for placements?",
+						"Does NIET have good placement opportunities?",
+						"What is the highest package offered at NIET?"
+					],
+					"responses": [
+						"NIET has an excellent placement record, with top companies visiting the campus every year.",
+						"Companies like TCS, Infosys, Wipro, Capgemini, and Amazon recruit students from NIET.",
+						"The highest package offered at NIET has gone up to 40 LPA in recent years.",
+						"The college has a dedicated placement cell that provides training and career guidance to students."
+					]
+				},
+				{
+					"tag": "niet_admissions",
+					"patterns": [
+						"How can I get admission to NIET?",
+						"What is the admission process for NIET?",
+						"Does NIET accept JEE scores?",
+						"Can I apply for direct admission to NIET?",
+						"What are the eligibility criteria for NIET?"
+					],
+					"responses": [
+						"Admissions to NIET are based on entrance exams like JEE Main for engineering and UPSEE for other programs.",
+						"Direct admissions are also available for eligible candidates under management quota.",
+						"The eligibility criteria vary by program; for B.Tech, you need to have passed 10+2 with Physics, Chemistry, and Mathematics.",
+						"You can apply online through the official NIET website or visit the campus for more details."
+					]
+				},
+				{
+					"tag": "niet_events",
+					"patterns": [
+						"Does NIET organize cultural events?",
+						"Tell me about the fests at NIET",
+						"Are there technical events at NIET?",
+						"What extracurricular activities are available at NIET?",
+						"Does NIET have a sports fest?"
+					],
+					"responses": [
+						"NIET organizes various cultural and technical events throughout the year, including its annual fest 'TechnoCultural Fest'.",
+						"The college hosts technical competitions, hackathons, and workshops for students.",
+						"Extracurricular activities include music, dance, drama, and art competitions.",
+						"NIET also organizes a sports fest where students can participate in various games and athletic events."
+					]
+				},
+				{
+					"tag": "niet_contact",
+					"patterns": [
+						"How can I contact NIET?",
+						"What is the phone number of NIET?",
+						"Tell me the email address of NIET",
+						"Where is NIET located?",
+						"How do I reach NIET?"
+					],
+					"responses": [
+						"You can contact NIET at their official phone number: +91-120-2328062.",
+						"The email address for inquiries is info@niet.co.in.",
+						"NIET is located at Knowledge Park II, Greater Noida, Uttar Pradesh.",
+						"You can reach NIET by road, and it is well-connected to Delhi and Noida."
+					]
+				},
+				{
+					"tag": "niet_placements_process",
+					"patterns": [
+						"What is the placement process at NIET?",
+						"How does NIET prepare students for placements?",
+						"Are there mock interviews at NIET?",
+						"What training does NIET provide for placements?",
+						"How to register for placements at NIET?"
+					],
+					"responses": [
+						"NIET has a structured placement process that includes pre-placement talks, resume building, and mock interviews.",
+						"The college provides training sessions on soft skills, technical skills, and interview preparation.",
+						"Students are registered for placements through the placement cell, which coordinates with companies.",
+						"Mock interviews are conducted to help students gain confidence and improve their performance."
+					]
+				},
+				{
+					"tag": "niet_internships",
+					"patterns": [
+						"Does NIET provide internship opportunities?",
+						"Tell me about internships at NIET",
+						"How to apply for internships through NIET?",
+						"What companies offer internships to NIET students?",
+						"Are internships mandatory at NIET?"
+					],
+					"responses": [
+						"NIET encourages students to pursue internships as part of their academic curriculum.",
+						"The college has tie-ups with various companies for internship opportunities.",
+						"Students can apply for internships through the placement cell or directly with companies.",
+						"Internships are not mandatory but highly recommended for practical experience."
+					]
+				},
+				{
+					"tag": "niet_ranking",
+					"patterns": [
+						"What is the ranking of NIET?",
+						"Is NIET among the top colleges?",
+						"How does NIET rank in India?",
+						"Tell me about NIET's NIRF ranking",
+						"Is NIET a top engineering college?"
+					],
+					"responses": [
+						"NIET is consistently ranked among the top private engineering colleges in India.",
+						"NIET has been ranked in the NIRF rankings for its academic excellence and infrastructure.",
+						"The college is recognized for its strong placement record and quality education.",
+						"NIET is one of the top colleges in Uttar Pradesh for engineering and management programs."
+					]
+				},
+				{
+					"tag": "niet_hostel",
+					"patterns": [
+						"Does NIET have hostels?",
+						"Tell me about the hostel facilities at NIET",
+						"Are there separate hostels for boys and girls at NIET?",
+						"How are the hostel rooms at NIET?",
+						"Is the food good at NIET hostels?"
+					],
+					"responses": [
+						"Yes, NIET provides separate hostels for boys and girls with all necessary amenities.",
+						"The hostel rooms are spacious, well-furnished, and equipped with Wi-Fi.",
+						"NIET hostels have a mess that serves hygienic and nutritious food.",
+						"Hostel facilities include 24/7 security, laundry services, and recreational areas."
+					]
+				},
+				{
+					"tag": "niet_scholarships",
+					"patterns": [
+						"Does NIET offer scholarships?",
+						"Tell me about scholarships at NIET",
+						"Are there any financial aid options at NIET?",
+						"How can I apply for a scholarship at NIET?",
+						"Does NIET provide merit-based scholarships?"
+					],
+					"responses": [
+						"NIET offers scholarships to meritorious students based on their academic performance.",
+						"Financial aid is available for students from economically weaker sections.",
+						"Scholarships are also provided to students with exceptional achievements in sports or extracurricular activities.",
+						"You can apply for scholarships during the admission process by submitting the required documents."
+					]
+				},
+				{
+					"tag": "niet_infrastructure",
+					"patterns": [
+						"How is the infrastructure at NIET?",
+						"Tell me about the labs at NIET",
+						"Does NIET have a good library?",
+						"Are there sports facilities at NIET?",
+						"How is the campus of NIET?"
+					],
+					"responses": [
+						"NIET has a modern campus with state-of-the-art infrastructure, including well-equipped labs and classrooms.",
+						"The library at NIET is well-stocked with books, journals, and digital resources.",
+						"The campus includes sports facilities for cricket, football, basketball, and indoor games.",
+						"NIET provides a conducive environment for learning with advanced technology and resources."
+					]
+				},
+				{
+					"tag": "niet_alumni",
+					"patterns": [
+						"Tell me about NIET alumni",
+						"Are NIET alumni successful?",
+						"Does NIET have an alumni network?",
+						"Who are some notable alumni of NIET?",
+						"How does NIET support its alumni?"
+					],
+					"responses": [
+						"NIET alumni are working in top companies like Google, Microsoft, Amazon, and Infosys.",
+						"The college has a strong alumni network that helps current students with mentorship and career guidance.",
+						"NIET organizes alumni meets to foster connections between past and present students.",
+						"Many NIET alumni have pursued higher studies in prestigious institutions worldwide."
+					]
+				},
+				{
+					"tag": "niet_research",
+					"patterns": [
+						"Does NIET focus on research?",
+						"Tell me about research opportunities at NIET",
+						"Are there research labs at NIET?",
+						"Can students participate in research projects at NIET?",
+						"How does NIET promote innovation?"
+					],
+					"responses": [
+						"NIET encourages research and innovation through its dedicated research labs and centers.",
+						"Students can participate in research projects under the guidance of experienced faculty members.",
+						"The college collaborates with industries and organizations for research and development.",
+						"NIET organizes hackathons, workshops, and seminars to promote innovation among students."
+					]
+				},
+				{
+					"tag": "niet_clubs",
+					"patterns": [
+						"Are there student clubs at NIET?",
+						"Tell me about extracurricular activities at NIET",
+						"Does NIET have a robotics club?",
+						"What cultural clubs are there at NIET?",
+						"Can I join a technical club at NIET?"
+					],
+					"responses": [
+						"NIET has various student clubs, including technical, cultural, and sports clubs.",
+						"The robotics club at NIET provides hands-on experience in building and programming robots.",
+						"Cultural clubs organize events like dance, music, and drama competitions.",
+						"Technical clubs focus on coding, electronics, and innovation projects.",
+						"Students are encouraged to join clubs based on their interests and participate in activities."
+					]
+				},
+				{
+					"tag": "niet_transport",
+					"patterns": [
+						"Does NIET provide transportation?",
+						"Tell me about the bus service at NIET",
+						"Are there buses for students at NIET?",
+						"How can I commute to NIET?",
+						"Is transportation available for NIET students?"
+					],
+					"responses": [
+						"NIET provides transportation facilities with a fleet of buses covering nearby areas.",
+						"The bus service is available for both students and staff members.",
+						"Routes include Delhi, Noida, Ghaziabad, and other nearby locations.",
+						"Transportation is safe and reliable, ensuring timely commutes to and from the campus."
+					]
+				},
+				{
+					"tag": "casual_greetings",
+					"patterns": [
+						"Hi there!",
+						"Hello!",
+						"Hey!",
+						"Good morning!",
+						"Good evening!",
+						"What's up?",
+						"Howdy!"
+					],
+					"responses": [
+						"Hello! How can I assist you today?",
+						"Hi there! What can I do for you?",
+						"Hey! How's it going?",
+						"Good to see you! Let me know how I can help."
+					]
+				},
+				{
+					"tag": "small_talk",
+					"patterns": [
+						"How are you?",
+						"What's new?",
+						"How's your day going?",
+						"Are you busy?",
+						"What's up with you?"
+					],
+					"responses": [
+						"I'm just here to help you! How about you?",
+						"My day is going great, thanks for asking! What about yours?",
+						"I'm always ready to assist you. What can I do for you today?",
+						"Not much, just here to chat with you!"
+					]
+				},
+				{
+					"tag": "compliments",
+					"patterns": [
+						"You're awesome!",
+						"You're so helpful!",
+						"Thanks for being amazing!",
+						"I appreciate you!",
+						"You're the best!"
+					],
+					"responses": [
+						"Thank you! 😊 I'm here to help!",
+						"You're too kind! Let me know if there's anything else I can do.",
+						"That means a lot! I'm glad I could assist you.",
+						"You're awesome too! Thanks for the kind words."
+					]
+				},
+				{
+					"tag": "jokes",
+					"patterns": [
+						"Tell me a joke",
+						"Make me laugh",
+						"Do you know any jokes?",
+						"Say something funny"
+					],
+					"responses": [
+						"Why don’t skeletons fight each other? They don’t have the guts! 😂",
+						"Why did the scarecrow win an award? Because he was outstanding in his field! 🌾",
+						"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+						"How many programmers does it take to change a light bulb? None—it’s a hardware problem! 💡"
+					]
+				},
+				{
+					"tag": "fun_facts",
+					"patterns": [
+						"Tell me a fun fact",
+						"Do you know any interesting facts?",
+						"Share something cool",
+						"What's a random fact?"
+					],
+					"responses": [
+						"Did you know? Honey never spoils—it can last for thousands of years!",
+						"Octopuses have three hearts, and two of them stop beating when they swim.",
+						"Bananas are berries, but strawberries aren't!",
+						"The Eiffel Tower can grow taller in the summer due to heat expansion."
+					]
+				},
+				{
+					"tag": "daily_affirmations",
+					"patterns": [
+						"Give me a daily affirmation",
+						"Say something positive",
+						"Motivate me",
+						"Can you inspire me?"
+					],
+					"responses": [
+						"You are capable of amazing things!",
+						"Believe in yourself—you've got this!",
+						"Every day is a new opportunity to grow and succeed.",
+						"Stay positive, work hard, and make it happen!"
+					]
+				},
+				{
+					"tag": "goodbye",
+					"patterns": [
+						"Bye",
+						"See you later",
+						"Goodbye",
+						"Take care",
+						"I'm leaving",
+						"Catch you later"
+					],
+					"responses": [
+						"Goodbye! Have a great day! 👋",
+						"See you next time! Take care!",
+						"Bye! Let me know if you need anything else.",
+						"Catch you later! Stay awesome!"
+					]
+				},
+				{
+					"tag": "thank_you",
+					"patterns": [
+						"Thank you",
+						"Thanks a lot",
+						"Thanks!",
+						"I appreciate it",
+						"You're great!"
+					],
+					"responses": [
+						"You're welcome! 😊",
+						"Happy to help!",
+						"Anytime! Let me know if you need anything else.",
+						"Glad I could assist you!"
+					]
+				},
+				{
+					"tag": "apologies",
+					"patterns": [
+						"Sorry",
+						"My bad",
+						"I didn't mean to",
+						"Apologies",
+						"Forgive me"
+					],
+					"responses": [
+						"No worries at all!",
+						"It's okay, we all make mistakes.",
+						"Don't worry about it, I'm here to help.",
+						"All good! Let me know how I can assist you."
+					]
+				},
+				{
+					"tag": "riddles_easy",
+					"patterns": [
+						"Tell me an easy riddle",
+						"Do you know any simple riddles?",
+						"Give me a riddle for kids",
+						"Can you share a fun riddle?"
+					],
+					"responses": [
+						"What has to be broken before you can use it? (Answer: An egg)",
+						"I’m tall when I’m young, and I’m short when I’m old. What am I? (Answer: A candle)",
+						"What has hands but can’t clap? (Answer: A clock)",
+						"What has a neck but no head? (Answer: A bottle)"
+					]
+				},
+				{
+					"tag": "riddles_medium",
+					"patterns": [
+						"Tell me a medium riddle",
+						"Do you know any tricky riddles?",
+						"Give me a riddle to think about",
+						"Can you share a challenging riddle?"
+					],
+					"responses": [
+						"What can travel around the world while staying in the same spot? (Answer: A stamp)",
+						"The more of this you take, the more you leave behind. What is it? (Answer: Footsteps)",
+						"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I? (Answer: An echo)",
+						"What has cities, but no houses; forests, but no trees; and rivers, but no water? (Answer: A map)"
+					]
+				},
+				{
+					"tag": "riddles_hard",
+					"patterns": [
+						"Tell me a hard riddle",
+						"Do you know any difficult riddles?",
+						"Give me a riddle to solve",
+						"Can you share a mind-bending riddle?"
+					],
+					"responses": [
+						"I have keys but no locks. I have space but no room. You can enter, but you can’t go outside. What am I? (Answer: A keyboard)",
+						"What has an eye but cannot see? (Answer: A needle)",
+						"The person who makes it, sells it. The person who buys it, never uses it. The person who uses it, never knows they’re using it. What is it? (Answer: A coffin)",
+						"I’m light as a feather, yet the strongest person can’t hold me for more than 5 minutes. What am I? (Answer: Your breath)"
+					]
+				},
+				{
+					"tag": "riddles_funny",
+					"patterns": [
+						"Tell me a funny riddle",
+						"Do you know any humorous riddles?",
+						"Give me a riddle that’s funny",
+						"Can you share a silly riddle?"
+					],
+					"responses": [
+						"What has four wheels and flies? (Answer: A garbage truck)",
+						"Why did the math book look sad? (Answer: Because it had too many problems)",
+						"What comes down but never goes up? (Answer: Rain)",
+						"What has a face and two hands but no arms or legs? (Answer: A clock)"
+					]
+				},
+				{
+					"tag": "riddles_logic",
+					"patterns": [
+						"Tell me a logic riddle",
+						"Do you know any brain teasers?",
+						"Give me a riddle that requires logic",
+						"Can you share a puzzle-like riddle?"
+					],
+					"responses": [
+						"You see a boat filled with people. It hasn’t sunk, but when you look again, you don’t see a single person. Why? (Answer: All the people were married)",
+						"What has many needles but doesn’t sew? (Answer: A Christmas tree)",
+						"I’m always in front of you but can’t be seen. What am I? (Answer: The future)",
+						"What can you hold in your left hand but not in your right? (Answer: Your right hand)"
+					]
+				},
+				{
+					"tag": "jokes_general",
+					"patterns": [
+						"Tell me a joke",
+						"Make me laugh",
+						"Do you know any jokes?",
+						"Say something funny",
+						"Can you share a joke?"
+					],
+					"responses": [
+						"Why don’t skeletons fight each other? They don’t have the guts! 😂",
+						"Why did the scarecrow win an award? Because he was outstanding in his field! 🌾",
+						"Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+						"How many programmers does it take to change a light bulb? None—it’s a hardware problem! 💡"
+					]
+				},
+				{
+					"tag": "jokes_tech",
+					"patterns": [
+						"Tell me a tech joke",
+						"Do you know any programming jokes?",
+						"Say something funny about computers",
+						"Can you share a coding joke?"
+					],
+					"responses": [
+						"Why do Java developers wear glasses? Because they don’t C#! 🤓",
+						"Why was the computer cold? It left its Windows open! 🖥️",
+						"Why did the programmer quit his job? He didn’t get arrays. 😂",
+						"There are 10 types of people in the world: those who understand binary and those who don’t. 😄"
+					]
+				},
+				{
+					"tag": "jokes_puns",
+					"patterns": [
+						"Tell me a pun",
+						"Do you know any puns?",
+						"Say something punny",
+						"Can you share a funny pun?"
+					],
+					"responses": [
+						"I’m reading a book on anti-gravity. It’s impossible to put down! 📚",
+						"I used to play piano by ear, but now I use my hands. 🎹",
+						"I’m on a seafood diet. I see food and I eat it. 🍤",
+						"Did you hear about the guy who invented Lifesavers? He made a mint! 🍬"
+					]
+				},
+				{
+					"tag": "jokes_animals",
+					"patterns": [
+						"Tell me an animal joke",
+						"Do you know any jokes about animals?",
+						"Say something funny about pets",
+						"Can you share a joke about animals?"
+					],
+					"responses": [
+						"What do you call a fish wearing a bowtie? Sofishticated. 🐟",
+						"Why don’t elephants use computers? They’re afraid of the mouse! 🐘",
+						"What do you call a dog magician? A labracadabrador! 🐕",
+						"Why did the cow go to space? To see the Milky Way! 🐄"
+					]
+				},
+				{
+					"tag": "jokes_school",
+					"patterns": [
+						"Tell me a school joke",
+						"Do you know any jokes about teachers?",
+						"Say something funny about school",
+						"Can you share a joke about students?"
+					],
+					"responses": [
+						"Why was the math book sad? It had too many problems. 📘",
+						"Why did the student eat his homework? Because the teacher said it was a piece of cake! 🎂",
+						"Why did the computer go to school? To improve its bytes! 💻",
+						"What’s a teacher’s favorite nation? Expla-nation! 🧑‍🏫"
+					]
+				},
+				{
+					"tag": "jokes_food",
+					"patterns": [
+						"Tell me a food joke",
+						"Do you know any jokes about food?",
+						"Say something funny about cooking",
+						"Can you share a joke about snacks?"
+					],
+					"responses": [
+						"Why did the tomato turn red? Because it saw the salad dressing! 🍅",
+						"What do you call cheese that isn’t yours? Nacho cheese! 🧀",
+						"Why did the cookie go to the doctor? Because it felt crumby! 🍪",
+						"What’s orange and sounds like a parrot? A carrot! 🥕"
+					]
+				}
+			]
+		}
+
