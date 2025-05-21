@@ -1,3 +1,8 @@
+import nltk
+nltk.download("punkt")
+nltk.download("wordnet")
+
+
 from flask import Flask, render_template, request, session, jsonify
 from chatbot_py import process_message
 
